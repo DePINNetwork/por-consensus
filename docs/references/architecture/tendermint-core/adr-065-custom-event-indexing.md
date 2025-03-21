@@ -72,7 +72,7 @@ the database used.
 ## Decision
 
 We will adopt a similar approach to that of the Cosmos SDK's `KVStore` state
-listening described in [ADR-038](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-038-state-listening.md).
+listening described in [ADR-038](https://github.com/depinnetwork/depin-sdk/blob/master/docs/architecture/adr-038-state-listening.md).
 
 We will implement the following changes:
 
@@ -420,6 +420,6 @@ the heights specified in a given range.
 
 ## References
 
-- [Cosmos SDK ADR-038](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-038-state-listening.md)
+- [Cosmos SDK ADR-038](https://github.com/depinnetwork/depin-sdk/blob/master/docs/architecture/adr-038-state-listening.md)
 - [PostgreSQL](https://www.postgresql.org/)
 - [SQLite](https://www.sqlite.org/index.html)

@@ -28,7 +28,7 @@ In the following, I distilled what I considered relevant from
 
 #### Some IBC links
 
-- [QueryConsensusState](https://github.com/cosmos/cosmos-sdk/blob/2651427ab4c6ea9f81d26afa0211757fc76cf747/x/ibc/02-client/client/utils/utils.go#L68)
+- [QueryConsensusState](https://github.com/depinnetwork/depin-sdk/blob/2651427ab4c6ea9f81d26afa0211757fc76cf747/x/ibc/02-client/client/utils/utils.go#L68)
   
 #### Required Changes in ICS 007
 

@@ -860,7 +860,7 @@ The expectation is for there to be some number of high level paths
 differentiating concerns, like `/p2p`, `/store`, and `/app`. Currently,
 CometBFT only uses `/p2p`, for filtering peers. For more advanced use, see the
 implementation of
-[Query in the Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/blob/e2037f7696fed4fdd4bc076f9e7053fe8178a881/baseapp/abci.go#L557-L565).
+[Query in the Cosmos-SDK](https://github.com/depinnetwork/depin-sdk/blob/e2037f7696fed4fdd4bc076f9e7053fe8178a881/baseapp/abci.go#L557-L565).
 
 ### Crash Recovery
 

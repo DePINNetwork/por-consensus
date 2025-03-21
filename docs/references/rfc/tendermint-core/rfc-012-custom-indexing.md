@@ -347,5 +347,5 @@ something like this (subject to refinement):
 [postgres]: https://postgresql.org/
 [psql]: https://github.com/tendermint/tendermint/tree/main/state/indexer/sink/psql
 [query]: https://pkg.go.dev/github.com/tendermint/tendermint/internal/pubsub/query/syntax
-[sdk]: https://github.com/cosmos/cosmos-sdk
-[tmdb]: https://pkg.go.dev/github.com/tendermint/tm-db#DB
+[sdk]: https://github.com/depinnetwork/depin-sdk
+[tmdb]: https://pkg.go.dev/github.com/depinnetwork/db#DB

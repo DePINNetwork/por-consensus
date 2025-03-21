@@ -411,10 +411,10 @@ discussed.
 [rpc-service]: https://docs.tendermint.com/v0.34/rpc/
 [light-client]: https://docs.tendermint.com/v0.34/tendermint-core/light-client.html
 [tm-cli]: https://github.com/tendermint/tendermint/tree/main/cmd/tendermint
-[cosmos-sdk]: https://github.com/cosmos/cosmos-sdk/
+[cosmos-sdk]: https://github.com/depinnetwork/depin-sdk/
 [local-client]: https://github.com/tendermint/tendermint/blob/main/abci/client/local_client.go
 [socket-server]: https://github.com/tendermint/tendermint/blob/main/abci/server/socket_server.go
-[sdk-grpc]: https://pkg.go.dev/github.com/cosmos/cosmos-sdk/types/tx#ServiceServer
+[sdk-grpc]: https://pkg.go.dev/github.com/depinnetwork/depin-sdk/types/tx#ServiceServer
 [json-rpc]: https://www.jsonrpc.org/specification
 [abci-conn]: https://github.com/tendermint/tendermint/blob/main/spec/abci/abci++_basic_concepts.md
 [adr-57]: https://github.com/tendermint/tendermint/blob/main/docs/architecture/adr-057-RPC.md

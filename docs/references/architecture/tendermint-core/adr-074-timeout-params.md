@@ -194,7 +194,7 @@ The specific mechanism for adding these parameters depends on work related to
 [default-consensus-params]: https://github.com/tendermint/tendermint/blob/7cdf560173dee6773b80d1c574a06489d4c394fe/types/params.go#L79
 [current-timeout-defaults]: https://github.com/tendermint/tendermint/blob/7cdf560173dee6773b80d1c574a06489d4c394fe/config/config.go#L955
 [config-toml]: https://github.com/tendermint/tendermint/blob/5cc980698a3402afce76b26693ab54b8f67f038b/config/toml.go#L425-L440
-[cosmos-sdk-consensus-params]: https://github.com/cosmos/cosmos-sdk/issues/6197
+[cosmos-sdk-consensus-params]: https://github.com/depinnetwork/depin-sdk/issues/6197
 [time-param-validation]: https://github.com/tendermint/tendermint/blob/7cdf560173dee6773b80d1c574a06489d4c394fe/config/config.go#L1038
 [tendermint-issue-5911-comment]: https://github.com/tendermint/tendermint/issues/5911#issuecomment-973560381
 [spec-issue-359]: https://github.com/tendermint/spec/issues/359

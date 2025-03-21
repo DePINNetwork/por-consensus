@@ -47,7 +47,7 @@ This presents a few technical and UX challenges for operators and applications.
 Namely, validators are not able to prioritize transactions by their fees or any
 incentive aligned mechanism. In addition, the lack of prioritization also leads
 to cascading effects in terms of DoS and various attack vectors on networks,
-e.g. [cosmos/cosmos-sdk#8224](https://github.com/cosmos/cosmos-sdk/discussions/8224).
+e.g. [cosmos/cosmos-sdk#8224](https://github.com/depinnetwork/depin-sdk/discussions/8224).
 
 Thus, Tendermint Core needs the ability for an application and its users to
 prioritize transactions in a flexible and performant manner. Specifically, we're

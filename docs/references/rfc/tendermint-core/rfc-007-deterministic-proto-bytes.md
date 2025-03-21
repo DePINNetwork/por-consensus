@@ -133,6 +133,6 @@ properly.
 ### References
 
 [proto-spec-encoding]: https://developers.google.com/protocol-buffers/docs/encoding
-[cosmos-sdk-adr-27]: https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-027-deterministic-protobuf-serialization.md
+[cosmos-sdk-adr-27]: https://github.com/depinnetwork/depin-sdk/blob/master/docs/architecture/adr-027-deterministic-protobuf-serialization.md
 [wire-pb]: https://github.com/creachadair/wirepb
 

@@ -145,7 +145,7 @@ Currently supported versions include:
 
 ### Libraries
 
-- [Cosmos SDK](http://github.com/cosmos/cosmos-sdk): A framework for building
+- [Cosmos SDK](http://github.com/depinnetwork/depin-sdk): A framework for building
   high-value public blockchain applications in Go
 - [Tendermint in Rust](https://github.com/informalsystems/tendermint-rs)
 - [ABCI Tower](https://github.com/penumbra-zone/tower-abci)

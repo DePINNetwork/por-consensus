@@ -462,5 +462,5 @@ network based State sync has proven to be fragile.
 [adr083]: https://github.com/tendermint/tendermint/pull/9651
 [adr103]: https://github.com/depinnetwork/por-consensus/pull/729
 [state-bootstrap]:  https://github.com/depinnetwork/por-consensus/issues/884
-[sdk-pr1]: https://github.com/cosmos/cosmos-sdk/pull/16061
-[sdk-pr2]: https://github.com/cosmos/cosmos-sdk/pull/16067
+[sdk-pr1]: https://github.com/depinnetwork/depin-sdk/pull/16061
+[sdk-pr2]: https://github.com/depinnetwork/depin-sdk/pull/16067

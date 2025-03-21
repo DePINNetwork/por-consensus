@@ -31,7 +31,7 @@ We strongly advise against using unreleased commits for your development.
 
 On the one hand, to get maximum performance you can run your application in
 the same process as the CometBFT, as long as your application is written in Go.
-[Cosmos SDK](https://github.com/cosmos/cosmos-sdk) is written
+[Cosmos SDK](https://github.com/depinnetwork/depin-sdk) is written
 this way.
 This is the approach followed in this tutorial.
 

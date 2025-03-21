@@ -206,6 +206,6 @@ remain publicly exported. All other packages in CometBFT should be moved under
 
 [\#1484]: https://github.com/depinnetwork/por-consensus/issues/1484
 [ADR 060]: tendermint-core/adr-060-go-api-stability.md
-[Cosmos SDK]: https://github.com/cosmos/cosmos-sdk/
+[Cosmos SDK]: https://github.com/depinnetwork/depin-sdk/
 [Cosmos Hub]: https://github.com/cosmos/gaia
 [IBC Go]: https://github.com/cosmos/ibc-go

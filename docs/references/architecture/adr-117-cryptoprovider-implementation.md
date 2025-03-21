@@ -62,7 +62,7 @@ The implementation of ADR-001 in CometBFT will require a medium-level refactor o
 * New directories reorganization:
 Implementations of crypto providers (previously `Privval` implementations) should be in their own directory. See the [Directories reorganization](#directories-reorganization) section for more details.
 
-* **[Optional]** Adding [Keyring](https://github.com/cosmos/cosmos-sdk/blob/main/crypto/keyring/keyring.go) and [Record](https://github.com/cosmos/cosmos-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) for storing and loading providers.
+* **[Optional]** Adding [Keyring](https://github.com/depinnetwork/depin-sdk/blob/main/crypto/keyring/keyring.go) and [Record](https://github.com/depinnetwork/depin-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) for storing and loading providers.
 
 * **[Optional]** Use `Keyring` to load and instantiate validators when booting up a node.
 
@@ -216,7 +216,7 @@ Alternatives:
 
 * *Low impact / minimal dependencies*: The corresponding `CryptoProvider` can be directly stored on disk in a dedicated directory in an encoding format of choice (text, JSON)
 
-* *Greater impact / better security*: Use cosmos-sdk's [Keyring](https://github.com/cosmos/cosmos-sdk/blob/8bfcf554275c1efbb42666cc8510d2da139b67fa/client/v2/autocli/keyring/interface.go#L11-L23). to manage `CryptoProvider` along with its private keys. This specifically applies to the `FilePV` implementation, which could store its private keys through `Keyring` instead of a file in the filesystem. This approach will require decoupling the `Keyring` package from the cosmos-sdk, which could be cumbersome.
+* *Greater impact / better security*: Use cosmos-sdk's [Keyring](https://github.com/depinnetwork/depin-sdk/blob/8bfcf554275c1efbb42666cc8510d2da139b67fa/client/v2/autocli/keyring/interface.go#L11-L23). to manage `CryptoProvider` along with its private keys. This specifically applies to the `FilePV` implementation, which could store its private keys through `Keyring` instead of a file in the filesystem. This approach will require decoupling the `Keyring` package from the cosmos-sdk, which could be cumbersome.
 
 
 #### Directories reorganization

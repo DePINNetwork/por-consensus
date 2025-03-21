@@ -1123,7 +1123,7 @@ to this release!
 
 - Bump tm-load-test to v1.3.0 to remove implicit dependency on Tendermint Core
   ([\#165](https://github.com/depinnetwork/por-consensus/pull/165))
-- Replace [tm-db](https://github.com/tendermint/tm-db) with
+- Replace [tm-db](https://github.com/depinnetwork/db) with
   [cometbft-db](https://github.com/depinnetwork/por-consensus-db)
   ([\#160](https://github.com/depinnetwork/por-consensus/pull/160))
 - `[crypto]` Update to use btcec v2 and the latest btcutil

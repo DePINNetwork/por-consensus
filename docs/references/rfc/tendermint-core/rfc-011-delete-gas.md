@@ -153,8 +153,8 @@ gossiped along with the transaction.
 
 [eth-whitepaper-messages]: https://ethereum.org/en/whitepaper/#messages-and-transactions
 [gas-add-pr]: https://github.com/tendermint/tendermint/pull/2360
-[cosmos-sdk-gas]: https://github.com/cosmos/cosmos-sdk/blob/c00cedb1427240a730d6eb2be6f7cb01f43869d3/docs/basics/gas-fees.md
-[cosmos-sdk-fees]: https://github.com/cosmos/cosmos-sdk/blob/c00cedb1427240a730d6eb2be6f7cb01f43869d3/docs/basics/tx-lifecycle.md#gas-and-fees
+[cosmos-sdk-gas]: https://github.com/depinnetwork/depin-sdk/blob/c00cedb1427240a730d6eb2be6f7cb01f43869d3/docs/basics/gas-fees.md
+[cosmos-sdk-fees]: https://github.com/depinnetwork/depin-sdk/blob/c00cedb1427240a730d6eb2be6f7cb01f43869d3/docs/basics/tx-lifecycle.md#gas-and-fees
 [anoma-gas]: https://github.com/anoma/anoma/blob/6974fe1532a59db3574fc02e7f7e65d1216c1eb2/docs/src/specs/ledger.md#transaction-execution
 [reap-max-bytes-max-gas]: https://github.com/tendermint/tendermint/blob/1ac58469f32a98f1c0e2905ca1773d9eac7b7103/internal/mempool/types.go#L45
 [add-mempool-error]: https://github.com/tendermint/tendermint/blob/205bfca66f6da1b2dded381efb9ad3792f9404cf/rpc/coretypes/responses.go#L239

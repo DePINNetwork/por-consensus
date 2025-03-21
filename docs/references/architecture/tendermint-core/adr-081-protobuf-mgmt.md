@@ -191,8 +191,8 @@ We currently aim to:
 [clang-format]: https://clang.llvm.org/docs/ClangFormat.html
 [clang-format GitHub Action]: https://github.com/marketplace/actions/clang-format-github-action
 [buf-docker]: https://hub.docker.com/r/bufbuild/buf
-[cosmos-sdk-buf-registry-ci]: https://github.com/cosmos/cosmos-sdk/blob/e6571906043b6751951a42b6546431b1c38b05bd/.github/workflows/proto-registry.yml
-[cosmos-sdk-buf-linting-ci]: https://github.com/cosmos/cosmos-sdk/blob/e6571906043b6751951a42b6546431b1c38b05bd/.github/workflows/proto.yml#L15
+[cosmos-sdk-buf-registry-ci]: https://github.com/depinnetwork/depin-sdk/blob/e6571906043b6751951a42b6546431b1c38b05bd/.github/workflows/proto-registry.yml
+[cosmos-sdk-buf-linting-ci]: https://github.com/depinnetwork/depin-sdk/blob/e6571906043b6751951a42b6546431b1c38b05bd/.github/workflows/proto.yml#L15
 [\#8003]: https://github.com/tendermint/tendermint/issues/8003
 [Nix]: https://nixos.org/
 [gogoprotobuf]: https://github.com/cosmos/gogoproto
