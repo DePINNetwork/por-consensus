@@ -10,7 +10,7 @@ import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 
-option go_package = "github.com/cometbft/cometbft/api/cometbft/state/v2";
+option go_package = "github.com/depinnetwork/por-consensus/api/cometbft/state/v2";
 
 // LegacyABCIResponses retains the responses
 // of the legacy ABCI calls during block processing.

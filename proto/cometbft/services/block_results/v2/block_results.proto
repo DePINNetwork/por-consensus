@@ -4,7 +4,7 @@ package cometbft.services.block_results.v2;
 import "cometbft/abci/v2/types.proto";
 import "cometbft/types/v2/params.proto";
 
-option go_package = "github.com/cometbft/cometbft/api/cometbft/services/block_results/v2";
+option go_package = "github.com/depinnetwork/por-consensus/api/cometbft/services/block_results/v2";
 
 // GetBlockResults is a request for the BlockResults of a given height.
 message GetBlockResultsRequest {

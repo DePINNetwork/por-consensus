@@ -3,7 +3,7 @@ package cometbft.services.block_results.v2;
 
 import "cometbft/services/block_results/v2/block_results.proto";
 
-option go_package = "github.com/cometbft/cometbft/api/cometbft/services/block_results/v2";
+option go_package = "github.com/depinnetwork/por-consensus/api/cometbft/services/block_results/v2";
 
 /*
    BlockResultService provides the block results of a given or latestheight.
