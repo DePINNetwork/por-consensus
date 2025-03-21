@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	cmtcons "github.com/cometbft/cometbft/api/cometbft/consensus/v2"
-	cfg "github.com/cometbft/cometbft/config"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/bytes"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/types"
+	cmtcons "github.com/depinnetwork/por-consensus/api/cometbft/consensus/v2"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/bytes"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // ----------------------------------------------

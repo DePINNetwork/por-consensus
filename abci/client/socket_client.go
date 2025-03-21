@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cometbft/cometbft/abci/types"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	"github.com/cometbft/cometbft/internal/timer"
-	"github.com/cometbft/cometbft/libs/service"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	"github.com/depinnetwork/por-consensus/internal/timer"
+	"github.com/depinnetwork/por-consensus/libs/service"
 )
 
 const (

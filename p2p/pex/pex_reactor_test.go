@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/p2p/mock"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	"github.com/cometbft/cometbft/types"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/p2p/mock"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var cfg *config.P2PConfig

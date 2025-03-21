@@ -9,10 +9,10 @@ import (
 
 	"github.com/google/orderedcode"
 
-	idxutil "github.com/cometbft/cometbft/internal/indexer"
-	"github.com/cometbft/cometbft/libs/pubsub/query/syntax"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/types"
+	idxutil "github.com/depinnetwork/por-consensus/internal/indexer"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query/syntax"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 type HeightInfo struct {

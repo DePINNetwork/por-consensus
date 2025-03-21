@@ -129,4 +129,4 @@ The full solution is detailed and formalized in the [Algorithm Specification][al
 [issue371]: https://github.com/tendermint/spec/issues/371
 [issue372]: https://github.com/tendermint/spec/issues/372
 [issue377]: https://github.com/tendermint/spec/issues/377
-[issue2184]: https://github.com/cometbft/cometbft/issues/2184
+[issue2184]: https://github.com/depinnetwork/por-consensus/issues/2184

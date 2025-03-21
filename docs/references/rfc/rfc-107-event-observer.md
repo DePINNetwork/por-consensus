@@ -46,9 +46,9 @@ A more type-safe, understandable Observer pattern is proposed here than what
 currently exists in CometBFT. For example, in the consensus state there are many
 places where events are published via the event bus, e.g.:
 
-- <https://github.com/cometbft/cometbft/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L743>
-- <https://github.com/cometbft/cometbft/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L964>
-- <https://github.com/cometbft/cometbft/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L971>
+- <https://github.com/depinnetwork/por-consensus/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L743>
+- <https://github.com/depinnetwork/por-consensus/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L964>
+- <https://github.com/depinnetwork/por-consensus/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/state.go#L971>
 - etc.
 
 All of these event publishing methods, not only for consensus state but for
@@ -228,13 +228,13 @@ The drawbacks of the proposed approach include:
 - Concurrency concerns need to be reasoned about carefully, as back-pressure is
   still possible depending on how observers are implemented
 
-[\#1055]: https://github.com/cometbft/cometbft/issues/1055
+[\#1055]: https://github.com/depinnetwork/por-consensus/issues/1055
 [RFC 104]: rfc-104-actor-model.md
 [Actor]: https://en.wikipedia.org/wiki/Actor_model
 [Observer Pattern]: https://en.wikipedia.org/wiki/Observer_pattern
-[`EventBus`]: https://github.com/cometbft/cometbft/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/types/event_bus.go#L33
-[`Switch`]: https://github.com/cometbft/cometbft/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/p2p/switch.go#L70
-[test-eventbus-access]: https://github.com/cometbft/cometbft/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/mempool_test.go#L40
-[ADR 101]: https://github.com/cometbft/cometbft/issues/574
-[`Subscribe`]: https://github.com/cometbft/cometbft/blob/a9deb305e51278c25ad92b249caa092d24c5fc29/types/event_bus.go#L75
-[`SubscribeUnbuffered`]: https://github.com/cometbft/cometbft/blob/a9deb305e51278c25ad92b249caa092d24c5fc29/types/event_bus.go#L86
+[`EventBus`]: https://github.com/depinnetwork/por-consensus/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/types/event_bus.go#L33
+[`Switch`]: https://github.com/depinnetwork/por-consensus/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/p2p/switch.go#L70
+[test-eventbus-access]: https://github.com/depinnetwork/por-consensus/blob/091a1f312e5f2f4b183fab1d57d729a6c478ff1f/consensus/mempool_test.go#L40
+[ADR 101]: https://github.com/depinnetwork/por-consensus/issues/574
+[`Subscribe`]: https://github.com/depinnetwork/por-consensus/blob/a9deb305e51278c25ad92b249caa092d24c5fc29/types/event_bus.go#L75
+[`SubscribeUnbuffered`]: https://github.com/depinnetwork/por-consensus/blob/a9deb305e51278c25ad92b249caa092d24c5fc29/types/event_bus.go#L86

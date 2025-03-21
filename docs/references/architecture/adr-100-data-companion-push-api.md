@@ -497,8 +497,8 @@ PostgreSQL).
 - [\#7471] Deterministic Events
 - [ADR 075: RPC Event Subscription Interface][adr-075]
 
-[cometbft-db]: https://github.com/cometbft/cometbft-db
-[\#517]: https://github.com/cometbft/cometbft/issues/517
+[cometbft-db]: https://github.com/depinnetwork/por-consensus-db
+[\#517]: https://github.com/depinnetwork/por-consensus/issues/517
 [\#6729]: https://github.com/tendermint/tendermint/issues/6729
 [\#7156]: https://github.com/tendermint/tendermint/issues/7156
 [PostgreSQL indexer]: https://github.com/tendermint/tendermint/blob/0f45086c5fd79ba47ab0270944258a27ccfc6cc3/state/indexer/sink/psql/psql.go

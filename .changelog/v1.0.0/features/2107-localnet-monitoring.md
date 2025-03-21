@@ -1,1 +1,1 @@
-- `[test]` Added monitoring tools and dashboards for local testing with `localnet`. ([\#2107](https://github.com/cometbft/cometbft/issues/2107))
+- `[test]` Added monitoring tools and dashboards for local testing with `localnet`. ([\#2107](https://github.com/depinnetwork/por-consensus/issues/2107))

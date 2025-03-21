@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	abcitypes "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/metrics"
+	abcicli "github.com/depinnetwork/por-consensus/abci/client"
+	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/libs/metrics"
 )
 
 //go:generate ../scripts/mockery_generate.sh AppConnConsensus|AppConnMempool|AppConnQuery|AppConnSnapshot

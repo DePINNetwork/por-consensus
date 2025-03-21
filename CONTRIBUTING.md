@@ -177,13 +177,13 @@ complicates forking. While my fork lives at
 `https://github.com/ebuchman/cometbft`, the code should never exist at
 `$GOPATH/src/github.com/ebuchman/cometbft`. Instead, we use `git remote` to add
 the fork as a new remote for the original repo,
-`$GOPATH/src/github.com/cometbft/cometbft`, and do all the work there.
+`$GOPATH/src/github.com/depinnetwork/por-consensus`, and do all the work there.
 
 For instance, to create a fork and work on a branch of it, I would:
 
 - Create the fork on GitHub, using the fork button.
 - Go to the original repo checked out locally (i.e.
-  `$GOPATH/src/github.com/cometbft/cometbft`)
+  `$GOPATH/src/github.com/depinnetwork/por-consensus`)
 - `git remote rename origin upstream`
 - `git remote add origin git@github.com:ebuchman/basecoin.git`
 
@@ -397,13 +397,13 @@ Some good examples of changelog entry descriptions:
 ```md
 - `[consensus]` Small transaction throughput improvement (approximately 3-5\%
   from preliminary tests) through refactoring the way we use channels
-  ([\#1111](https://github.com/cometbft/cometbft/issues/1111))
+  ([\#1111](https://github.com/depinnetwork/por-consensus/issues/1111))
 - `[mempool]` Refactor Go API to be able to easily swap out the current mempool
   implementation in CometBFT forks
-  ([\#1112](https://github.com/cometbft/cometbft/issues/1112))
+  ([\#1112](https://github.com/depinnetwork/por-consensus/issues/1112))
 - `[p2p]` Automatically ban peers when their messages are unsolicited or are
   received too frequently
-  ([\#1113](https://github.com/cometbft/cometbft/issues/1113))
+  ([\#1113](https://github.com/depinnetwork/por-consensus/issues/1113))
 ```
 
 Some bad examples of changelog entry descriptions:
@@ -426,7 +426,7 @@ Changelog entries should be formatted as follows:
 
 ```md
 - `[module]` Some description of the change
-  ([\#1234](https://github.com/cometbft/cometbft/issues/1234): @contributor)
+  ([\#1234](https://github.com/depinnetwork/por-consensus/issues/1234): @contributor)
 ```
 
 Here, `module` is the part of the code that changed (typically a top-level Go
@@ -481,7 +481,7 @@ _Never_ force push `main`, unless fixing broken git history (which we rarely do
 anyways).
 
 To begin contributing, create a development branch either on
-`github.com/cometbft/cometbft`, or your fork (using `git remote add origin`).
+`github.com/depinnetwork/por-consensus`, or your fork (using `git remote add origin`).
 
 Make changes, and before submitting a pull request, update the changelog to
 record your change. Also, run either `git rebase` or `git merge` on top of the
@@ -606,10 +606,10 @@ Run: `cd test/fuzz && make fuzz-{PACKAGE-COMPONENT}`
 **If you contribute to the RPC endpoints it's important to document your changes
 in the [OpenAPI file](./rpc/openapi/openapi.yaml)**.
 
-[gh-issues]: https://github.com/cometbft/cometbft/issues
-[search-issues]: https://github.com/cometbft/cometbft/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
-[new-gh-issue]: https://github.com/cometbft/cometbft/issues/new/choose
-[rfcs]: https://github.com/cometbft/cometbft/tree/main/docs/rfc
+[gh-issues]: https://github.com/depinnetwork/por-consensus/issues
+[search-issues]: https://github.com/depinnetwork/por-consensus/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
+[new-gh-issue]: https://github.com/depinnetwork/por-consensus/issues/new/choose
+[rfcs]: https://github.com/depinnetwork/por-consensus/tree/main/docs/rfc
 [gh-draft-prs]: https://github.blog/2019-02-14-introducing-draft-pull-requests/
 [Go modules]: https://github.com/golang/go/wiki/Modules
 [Protocol Buffers]: https://protobuf.dev/
@@ -621,5 +621,5 @@ in the [OpenAPI file](./rpc/openapi/openapi.yaml)**.
 [go-testing]: https://golang.org/pkg/testing/
 [Fuzz tests]: https://en.wikipedia.org/wiki/Fuzzing
 [delve]: https://github.com/go-delve/delve
-[log-lazy]: https://github.com/cometbft/cometbft/blob/main/libs/log/lazy.go
+[log-lazy]: https://github.com/depinnetwork/por-consensus/blob/main/libs/log/lazy.go
 [conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0/

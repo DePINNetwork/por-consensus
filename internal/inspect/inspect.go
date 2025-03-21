@@ -10,17 +10,17 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/inspect/rpc"
-	cmtstrings "github.com/cometbft/cometbft/internal/strings"
-	"github.com/cometbft/cometbft/libs/log"
-	rpccore "github.com/cometbft/cometbft/rpc/core"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/state/indexer/block"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/inspect/rpc"
+	cmtstrings "github.com/depinnetwork/por-consensus/internal/strings"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	rpccore "github.com/depinnetwork/por-consensus/rpc/core"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	"github.com/depinnetwork/por-consensus/state/indexer/block"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/store"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var logger = log.NewLogger(os.Stdout)

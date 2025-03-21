@@ -9,7 +9,7 @@ only become available in the next major release with ABCI 2.0. See the
 
 In the v0.34.27 release, the CometBFT Go module is still
 `github.com/tendermint/tendermint` to facilitate ease of upgrading for users,
-but in this release we have changed this to `github.com/cometbft/cometbft`.
+but in this release we have changed this to `github.com/depinnetwork/por-consensus`.
 
 Please also see our [upgrading guidelines](./UPGRADING.md) for more details on
 upgrading from the v0.34 release series.
@@ -19,7 +19,7 @@ the v0.37 release.
 
 We'd love your feedback on this release! Please reach out to us via one of our
 communication channels, such as [GitHub
-Discussions](https://github.com/cometbft/cometbft/discussions), with any of your
+Discussions](https://github.com/depinnetwork/por-consensus/discussions), with any of your
 questions, comments and/or concerns.
 
 See below for more details.

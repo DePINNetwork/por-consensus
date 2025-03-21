@@ -5,9 +5,9 @@ package v2
 
 import (
 	fmt "fmt"
-	v2 "github.com/cometbft/cometbft/api/cometbft/abci/v2"
-	v21 "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	v1 "github.com/cometbft/cometbft/api/cometbft/version/v1"
+	v2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
+	v21 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	_ "github.com/cosmos/gogoproto/types"

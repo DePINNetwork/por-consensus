@@ -1,1 +1,1 @@
-- `[types]` Validate `Validator#Address` in `ValidateBasic` ([\#1715](https://github.com/cometbft/cometbft/pull/1715))
+- `[types]` Validate `Validator#Address` in `ValidateBasic` ([\#1715](https://github.com/depinnetwork/por-consensus/pull/1715))

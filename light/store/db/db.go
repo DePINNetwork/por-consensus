@@ -3,12 +3,12 @@ package db
 import (
 	"encoding/binary"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/light/store"
-	"github.com/cometbft/cometbft/types"
-	cmterrors "github.com/cometbft/cometbft/types/errors"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	"github.com/depinnetwork/por-consensus/light/store"
+	"github.com/depinnetwork/por-consensus/types"
+	cmterrors "github.com/depinnetwork/por-consensus/types/errors"
 )
 
 type dbs struct {

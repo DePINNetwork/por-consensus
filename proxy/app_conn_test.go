@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	"github.com/cometbft/cometbft/abci/server"
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	"github.com/depinnetwork/por-consensus/abci/server"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
 )
 
 var SOCKET = "socket"

@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtdb "github.com/cometbft/cometbft/db"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/mocks"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/mocks"
 )
 
 func TestBlockchainInfo(t *testing.T) {

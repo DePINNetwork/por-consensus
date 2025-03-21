@@ -1,1 +1,1 @@
-- `[state]` Save the state using a single DB batch ([\#1735](https://github.com/cometbft/cometbft/pull/1735))
+- `[state]` Save the state using a single DB batch ([\#1735](https://github.com/depinnetwork/por-consensus/pull/1735))

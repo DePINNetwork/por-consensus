@@ -120,7 +120,7 @@ Here is an example code:
 ```
 
 import (
-    "github.com/cometbft/cometbft/rpc/grpc/client/privileged"
+    "github.com/depinnetwork/por-consensus/rpc/grpc/client/privileged"
 )
 
 ctx := context.Background()
@@ -181,7 +181,7 @@ Here is an example code:
 ```
 
 import (
-    "github.com/cometbft/cometbft/rpc/grpc/client/privileged"
+    "github.com/depinnetwork/por-consensus/rpc/grpc/client/privileged"
 )
 
 ctx := context.Background()
@@ -247,7 +247,7 @@ Here is an example code:
 ```
 
 import (
-"github.com/cometbft/cometbft/rpc/grpc/client/privileged"
+"github.com/depinnetwork/por-consensus/rpc/grpc/client/privileged"
 )
 
 ctx := context.Background()
@@ -296,7 +296,7 @@ Here is an example code:
 ```
 
 import (
-"github.com/cometbft/cometbft/rpc/grpc/client/privileged"
+"github.com/depinnetwork/por-consensus/rpc/grpc/client/privileged"
 )
 
 ctx := context.Background()

@@ -41,8 +41,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
 )
 
 type operation int

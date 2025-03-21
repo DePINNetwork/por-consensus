@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	blockidxkv "github.com/cometbft/cometbft/state/indexer/block/kv"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	blockidxkv "github.com/depinnetwork/por-consensus/state/indexer/block/kv"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var DefaultPagination = txindex.Pagination{

@@ -39,7 +39,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/libs/metrics/teststat"
+	"github.com/depinnetwork/por-consensus/libs/metrics/teststat"
 )
 
 func TestCounter(t *testing.T) {

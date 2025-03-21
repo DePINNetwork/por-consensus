@@ -10,12 +10,12 @@ import (
 	"reflect"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/proxy"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/crypto/merkle"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/proxy"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var crc32c = crc32.MakeTable(crc32.Castagnoli)

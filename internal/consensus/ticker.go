@@ -3,8 +3,8 @@ package consensus
 import (
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/service"
 )
 
 const tickTockBufferSize = 10

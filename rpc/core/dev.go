@@ -1,8 +1,8 @@
 package core
 
 import (
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
 )
 
 // UnsafeFlushMempool removes all transactions from the mempool.

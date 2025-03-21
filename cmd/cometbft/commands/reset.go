@@ -7,11 +7,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	kt "github.com/cometbft/cometbft/internal/keytypes"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/privval"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	kt "github.com/depinnetwork/por-consensus/internal/keytypes"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/privval"
 )
 
 // ResetAllCmd removes the database of this CometBFT core

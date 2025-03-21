@@ -6,4 +6,4 @@
   If that is the case, the application MUST make sure that the total size of transactions
   returned in `ResponsePrepareProposal.txs` does not exceed `RequestPrepareProposal.max_tx_bytes`,
   otherwise CometBFT will panic.
-  ([\#980](https://github.com/cometbft/cometbft/issues/980))
+  ([\#980](https://github.com/depinnetwork/por-consensus/issues/980))

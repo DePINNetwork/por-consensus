@@ -63,11 +63,11 @@ Banning peers was also mentioned within [IBC-go](https://github.com/cosmos/ibc-g
 
 ### Current state of mempool/p2p interaction
 
-Transactions received from a peer are handled within the [`Receive`](https://github.com/cometbft/cometbft/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/reactor.go#L158) routine.
+Transactions received from a peer are handled within the [`Receive`](https://github.com/depinnetwork/por-consensus/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/reactor.go#L158) routine.
 
 Currently, the mempool triggers a disconnect from a peer in the case of the following errors:
 
-  - [Unknown message type](https://github.com/cometbft/cometbft/blob/main/mempool/reactor.go#L119)
+  - [Unknown message type](https://github.com/depinnetwork/por-consensus/blob/main/mempool/reactor.go#L119)
 
 However, disconnecting from a peer is not the same as banning the peer. The p2p layer will close the connection but
 the peer can reconnect without any penalty, and if the peer it is connecting to is configured to be its persistent peer,
@@ -78,7 +78,7 @@ from the node.
 
 The p2p layer implements banning peers by marking them
 as bad and removing them from the list of peers to connect to for *at least* a predefined amount of time. This is done by calling the
-[`MarkBad`](https://github.com/cometbft/cometbft/blob/main/spec/p2p/implementation/addressbook.md#bad-peers) routine implemented by the `Switch`.
+[`MarkBad`](https://github.com/depinnetwork/por-consensus/blob/main/spec/p2p/implementation/addressbook.md#bad-peers) routine implemented by the `Switch`.
 If the node does not set the amount of time to be banned, a default value is used.
 Note that the timing parameter sets the lower bound for when a peer will be unbanned.
 But the p2p layer will only try to connect to banned peers if the node is not sufficiently connected. Thus the node has no
@@ -160,7 +160,7 @@ is currently not supported by the p2p layer.
 
 *Banning a peer in case of duplicate transactions*
 
-Currently, a peer can send the same valid (or invalid) transaction [multiple times](https://github.com/cometbft/cometbft/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L247). Peers do not
+Currently, a peer can send the same valid (or invalid) transaction [multiple times](https://github.com/depinnetwork/por-consensus/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L247). Peers do not
 gossip transactions to peers that have sent them that same transaction. But there is no check on whether
 a node has already sent the same transaction to this peer before. There is also no check whether the transaction
 that is being gossiped is currently valid or not (assuming that invalid transactions could become valid).
@@ -262,7 +262,7 @@ We propose two ways to implement peer banning based on the result of `CheckTx`:
 **Peer banning when transactions are received**
 
 If a transaction fails `CheckTx` the
-[first time it is seen](https://github.com/cometbft/cometbft/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L409),
+[first time it is seen](https://github.com/depinnetwork/por-consensus/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L409),
  the peer can be banned right there:
 
 >>mempool/v0/clist_mempool.go#L409
@@ -312,7 +312,7 @@ The question is which one is more costly, doing `CheckTx` more then once, or kee
 
 
 
-As said, this code will [never be executed](https://github.com/cometbft/cometbft/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L239)
+As said, this code will [never be executed](https://github.com/depinnetwork/por-consensus/blob/ff0f98892f24aac11e46aeff2b6d2c0ad816701a/mempool/v0/clist_mempool.go#L239)
 for transactions whose hash is found
 in the cache.
 Instead of remembering the cached transactions, we could have had a valid/invalid bit per transaction within the cache. As transactions themselves do not
@@ -509,5 +509,5 @@ Other than avoiding relying solely on the response code values, there are no imm
 - [`CheckTx` function description](../../../spec/abci/abci++_methods.md#checktx)
 
 - Github discussions on this RFC:
-  - [CometBFT repo - PR \#78](https://github.com/cometbft/cometbft/pull/78)
+  - [CometBFT repo - PR \#78](https://github.com/depinnetwork/por-consensus/pull/78)
   - [Tendermint repo - PR \#9675](https://github.com/tendermint/tendermint/pull/9675)

@@ -7,13 +7,13 @@ import (
 
 	"github.com/rs/cors"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/rpc/core"
-	"github.com/cometbft/cometbft/rpc/jsonrpc/server"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/state/txindex"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/rpc/core"
+	"github.com/depinnetwork/por-consensus/rpc/jsonrpc/server"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	"github.com/depinnetwork/por-consensus/state/txindex"
 )
 
 // Server defines parameters for running an Inspector rpc server.

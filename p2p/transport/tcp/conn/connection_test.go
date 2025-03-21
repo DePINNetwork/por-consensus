@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	pbtypes "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/protoio"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	pbtypes "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/protoio"
 )
 
 const (

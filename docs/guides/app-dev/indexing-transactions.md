@@ -312,4 +312,4 @@ digit, as well as the following characters: `.` (dot), `-` (dash), `_`
 ^[\w]+[\.-\w]?$
 ```
 
-[abci-events]: https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_basic_concepts.md#events
+[abci-events]: https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci++_basic_concepts.md#events

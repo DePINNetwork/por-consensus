@@ -1,9 +1,9 @@
 package state
 
 import (
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 //

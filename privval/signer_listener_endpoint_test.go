@@ -9,11 +9,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var (

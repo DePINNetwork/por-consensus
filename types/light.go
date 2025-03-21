@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
 )
 
 // LightBlock is a SignedHeader and a ValidatorSet.

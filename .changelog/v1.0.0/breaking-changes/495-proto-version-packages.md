@@ -6,5 +6,5 @@
   as per the 1.0.0 release are in packages suffixed with `.v1`.
   Relocated generated Go code into a new `api` folder and changed the import
   paths accordingly.
-  ([\#495](https://github.com/cometbft/cometbft/pull/495),
-  [\#1504](https://github.com/cometbft/cometbft/issues/1504))
+  ([\#495](https://github.com/depinnetwork/por-consensus/pull/495),
+  [\#1504](https://github.com/depinnetwork/por-consensus/issues/1504))

@@ -9,15 +9,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cmtversion "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	"github.com/cometbft/cometbft/version"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cmtversion "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/types"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 func TestV1LBKey(t *testing.T) {

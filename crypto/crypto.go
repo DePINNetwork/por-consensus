@@ -1,8 +1,8 @@
 package crypto
 
 import (
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/bytes"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/libs/bytes"
 )
 
 const (

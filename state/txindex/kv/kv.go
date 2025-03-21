@@ -14,16 +14,16 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtdb "github.com/cometbft/cometbft/db"
-	idxutil "github.com/cometbft/cometbft/internal/indexer"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/libs/pubsub/query/syntax"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	idxutil "github.com/depinnetwork/por-consensus/internal/indexer"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query/syntax"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

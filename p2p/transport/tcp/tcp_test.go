@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	"github.com/cometbft/cometbft/p2p/transport"
-	"github.com/cometbft/cometbft/p2p/transport/tcp/conn"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
+	"github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
 )
 
 // newMultiplexTransport returns a tcp connected multiplexed peer

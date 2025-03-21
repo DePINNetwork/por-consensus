@@ -6,12 +6,12 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/internal/clist"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	tcpconn "github.com/cometbft/cometbft/p2p/transport/tcp/conn"
-	"github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/internal/clist"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	tcpconn "github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

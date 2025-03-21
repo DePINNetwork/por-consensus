@@ -34,8 +34,8 @@ echo export PATH=\"\$PATH:\$GOPATH/bin\" >> ~/.bash_profile
 Then run
 
 ```bash
-go get github.com/cometbft/cometbft
-cd $GOPATH/src/github.com/cometbft/cometbft
+go get github.com/depinnetwork/por-consensus
+cd $GOPATH/src/github.com/depinnetwork/por-consensus
 make install_abci
 ```
 

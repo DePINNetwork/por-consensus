@@ -62,7 +62,7 @@ info:
     object with type/value keys).
 
     Please refer to [this
-    documentation](https://pkg.go.dev/github.com/cometbft/cometbft/libs/json)
+    documentation](https://pkg.go.dev/github.com/depinnetwork/por-consensus/libs/json)
     for additional details.
 
     ## URI/HTTP
@@ -92,7 +92,7 @@ info:
   version: "v1"
   license:
     name: Apache 2.0
-    url: https://github.com/cometbft/cometbft/blob/main/LICENSE
+    url: https://github.com/depinnetwork/por-consensus/blob/main/LICENSE
 servers:
   - url: https://rpc.cosmos.directory/cosmoshub
     description: CometBFT running on a public node in the Cosmos registry
@@ -788,7 +788,7 @@ paths:
           description: |
             Complete consensus state.
 
-            See https://pkg.go.dev/github.com/cometbft/cometbft/types?tab=doc#Vote.String for Vote string description.
+            See https://pkg.go.dev/github.com/depinnetwork/por-consensus/types?tab=doc#Vote.String for Vote string description.
           content:
             application/json:
               schema:

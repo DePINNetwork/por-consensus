@@ -5,16 +5,16 @@ import (
 	"net"
 	"time"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	"github.com/cometbft/cometbft/libs/log"
-	ni "github.com/cometbft/cometbft/p2p/internal/nodeinfo"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	"github.com/cometbft/cometbft/p2p/transport"
-	"github.com/cometbft/cometbft/p2p/transport/tcp"
-	tcpconn "github.com/cometbft/cometbft/p2p/transport/tcp/conn"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	ni "github.com/depinnetwork/por-consensus/p2p/internal/nodeinfo"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
+	"github.com/depinnetwork/por-consensus/p2p/transport/tcp"
+	tcpconn "github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
 )
 
 // ------------------------------------------------

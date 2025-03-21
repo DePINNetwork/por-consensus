@@ -14,14 +14,14 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	"github.com/cometbft/cometbft/config"
-	flow "github.com/cometbft/cometbft/internal/flowrate"
-	"github.com/cometbft/cometbft/internal/timer"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/protoio"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/p2p/transport"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	"github.com/depinnetwork/por-consensus/config"
+	flow "github.com/depinnetwork/por-consensus/internal/flowrate"
+	"github.com/depinnetwork/por-consensus/internal/timer"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/protoio"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
 )
 
 const (

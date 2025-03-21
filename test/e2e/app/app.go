@@ -21,17 +21,17 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	gogo "github.com/cosmos/gogoproto/types"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abci "github.com/cometbft/cometbft/abci/types"
-	cryptoproto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/crypto"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/protoio"
-	"github.com/cometbft/cometbft/test/loadtime/payload"
-	cmttypes "github.com/cometbft/cometbft/types"
-	"github.com/cometbft/cometbft/version"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cryptoproto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cryptoenc "github.com/depinnetwork/por-consensus/crypto/encoding"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/protoio"
+	"github.com/depinnetwork/por-consensus/test/loadtime/payload"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 const (

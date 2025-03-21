@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const WaitThreshold = 10

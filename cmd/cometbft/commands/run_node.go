@@ -5,11 +5,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	kt "github.com/cometbft/cometbft/internal/keytypes"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	nm "github.com/cometbft/cometbft/node"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	kt "github.com/depinnetwork/por-consensus/internal/keytypes"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	nm "github.com/depinnetwork/por-consensus/node"
 )
 
 var (

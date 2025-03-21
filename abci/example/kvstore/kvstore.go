@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/crypto"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/version"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cryptoenc "github.com/depinnetwork/por-consensus/crypto/encoding"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 var (

@@ -1,1 +1,1 @@
-- `[crypto]` use decred secp256k1 directly ([#4294](https://github.com/cometbft/cometbft/pull/4294))
+- `[crypto]` use decred secp256k1 directly ([#4294](https://github.com/depinnetwork/por-consensus/pull/4294))

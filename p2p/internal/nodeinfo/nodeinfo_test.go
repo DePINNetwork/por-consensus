@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
 )
 
 const testCh = 0x01

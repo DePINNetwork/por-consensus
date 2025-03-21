@@ -137,6 +137,6 @@ stakeholders.
 - Requires slightly more maintenance than not versioning the types if type
   aliases need to be maintained for generated code
 
-[\#95]: https://github.com/cometbft/cometbft/issues/95
+[\#95]: https://github.com/depinnetwork/por-consensus/issues/95
 [buf-style]: https://buf.build/docs/best-practices/style-guide/
 [prost]: https://github.com/tokio-rs/prost/

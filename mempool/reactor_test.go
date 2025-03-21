@@ -11,15 +11,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abci "github.com/cometbft/cometbft/abci/types"
-	memproto "github.com/cometbft/cometbft/api/cometbft/mempool/v2"
-	cfg "github.com/cometbft/cometbft/config"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/proxy"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	memproto "github.com/depinnetwork/por-consensus/api/cometbft/mempool/v2"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/proxy"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

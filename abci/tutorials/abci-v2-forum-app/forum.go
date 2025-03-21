@@ -14,14 +14,14 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/cometbft/cometbft/abci/tutorials/abci-v2-forum-app/abci"
-	cfg "github.com/cometbft/cometbft/config"
-	cmtflags "github.com/cometbft/cometbft/libs/cli/flags"
-	cmtlog "github.com/cometbft/cometbft/libs/log"
-	nm "github.com/cometbft/cometbft/node"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/privval"
-	"github.com/cometbft/cometbft/proxy"
+	"github.com/depinnetwork/por-consensus/abci/tutorials/abci-v2-forum-app/abci"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtflags "github.com/depinnetwork/por-consensus/libs/cli/flags"
+	cmtlog "github.com/depinnetwork/por-consensus/libs/log"
+	nm "github.com/depinnetwork/por-consensus/node"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/privval"
+	"github.com/depinnetwork/por-consensus/proxy"
 )
 
 var homeDir string

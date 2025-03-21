@@ -9,7 +9,7 @@
  - Oct 25 2021: Update the ADR to match updated spec from @cason by @williambanfield
  - Nov 10 2021: Additional language updates by @williambanfield per feedback from @cason
  - Feb 2 2022: Synchronize logic for timely with latest version of the spec by @williambanfield
- - Feb 1 2024: Renamed to ADR 112 as basis for its adoption ([#1731](https://github.com/cometbft/cometbft/issues/1731)) in CometBFT v1.0 by @cason
+ - Feb 1 2024: Renamed to ADR 112 as basis for its adoption ([#1731](https://github.com/depinnetwork/por-consensus/issues/1731)) in CometBFT v1.0 by @cason
  - Feb 7 2024: Multiple revisions, fixes, and backwards compatibility discussion by @cason
  - Feb 12 2024: More detailed backwards compatibility discussion by @cason
  - Feb 22 2024: Consensus parameters for backwards compatibility by @cason
@@ -63,8 +63,8 @@ Applications often wish for some transactions to occur on a certain day, on a re
 All of these require some meaningful representation of agreed upon time.
 The following protocols and application features require a reliable source of time:
 
-* Light Clients [rely on correspondence between their known time](https://github.com/cometbft/cometbft/blob/main/spec/light-client/verification/README.md#failure-model) and the block time for block verification.
-* Evidence validity is determined [either in terms of heights or in terms of time](https://github.com/cometbft/cometbft/blob/main/spec/consensus/evidence.md#verification).
+* Light Clients [rely on correspondence between their known time](https://github.com/depinnetwork/por-consensus/blob/main/spec/light-client/verification/README.md#failure-model) and the block time for block verification.
+* Evidence validity is determined [either in terms of heights or in terms of time](https://github.com/depinnetwork/por-consensus/blob/main/spec/consensus/evidence.md#verification).
 * Unbonding of staked assets in the Cosmos Hub [occurs after a period of 21 days](https://github.com/cosmos/governance/blob/ce75de4019b0129f6efcbb0e752cd2cc9e6136d3/params-change/Staking.md#unbondingtime).
 * IBC packets can use either a [timestamp or a height to timeout packet delivery](https://docs.cosmos.network/v0.45/ibc/overview.html#acknowledgements)
 
@@ -96,7 +96,7 @@ added to address topic.
 <!---
 ### Changes to `CommitSig`
 
-The [CommitSig](https://github.com/cometbft/cometbft/blob/a419f4df76fe4aed668a6c74696deabb9fe73211/types/block.go#L604) struct currently contains a timestamp.
+The [CommitSig](https://github.com/depinnetwork/por-consensus/blob/a419f4df76fe4aed668a6c74696deabb9fe73211/types/block.go#L604) struct currently contains a timestamp.
 This timestamp is the current Unix time known to the validator when it issued a `Precommit` for the block.
 This timestamp is no longer used and will be removed in this change.
 
@@ -113,10 +113,10 @@ type CommitSig struct {
 
 ### Changes to `Vote` messages
 
-`Precommit` and `Prevote` messages use a common [Vote struct](https://github.com/cometbft/cometbft/blob/a419f4df76fe4aed668a6c74696deabb9fe73211/types/vote.go#L50).
+`Precommit` and `Prevote` messages use a common [Vote struct](https://github.com/depinnetwork/por-consensus/blob/a419f4df76fe4aed668a6c74696deabb9fe73211/types/vote.go#L50).
 This struct currently contains a timestamp.
-This timestamp is set using the [voteTime](https://github.com/cometbft/cometbft/blob/e8013281281985e3ada7819f42502b09623d24a0/internal/consensus/state.go#L2241) function and therefore vote times correspond to the current Unix time known to the validator, provided this time is greater than the timestamp of the previous block.
-For precommits, this timestamp is used to construct the [CommitSig that is included in the block in the LastCommit](https://github.com/cometbft/cometbft/blob/e8013281281985e3ada7819f42502b09623d24a0/types/block.go#L754) field.
+This timestamp is set using the [voteTime](https://github.com/depinnetwork/por-consensus/blob/e8013281281985e3ada7819f42502b09623d24a0/internal/consensus/state.go#L2241) function and therefore vote times correspond to the current Unix time known to the validator, provided this time is greater than the timestamp of the previous block.
+For precommits, this timestamp is used to construct the [CommitSig that is included in the block in the LastCommit](https://github.com/depinnetwork/por-consensus/blob/e8013281281985e3ada7819f42502b09623d24a0/types/block.go#L754) field.
 For prevotes, this field is currently unused.
 Proposer-based timestamps will use the timestamp that the proposer sets into the block and will therefore no longer require that a timestamp be included in the vote messages.
 This timestamp is therefore no longer useful as part of consensus and may optionally be dropped from the message.
@@ -141,7 +141,7 @@ type Vote struct {
 
 In order to ensure backwards compatibility, PBTS should be enabled using a [consensus parameter](#compatibility-parameters).
 The proposed approach is similar to the one adopted to enable vote extensions via
-[`VoteExtensionsEnableHeight`](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md#featureparamsvoteextensionsenableheight).
+[`VoteExtensionsEnableHeight`](https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci++_app_requirements.md#featureparamsvoteextensionsenableheight).
 
 In summary, the network will migrate from the `BFT Time` method for assigning
 and validating timestamps to the new method for assigning and validating
@@ -159,7 +159,7 @@ Moreover, when compared to the original ([ADR 071][original-adr]), we will **NOT
 ### New consensus parameters
 
 The PBTS specification includes some new parameters that must be the same among across all validators.
-The set of [consensus parameters](https://github.com/cometbft/cometbft/blob/main/proto/cometbft/types/v1/params.proto#L13)
+The set of [consensus parameters](https://github.com/depinnetwork/por-consensus/blob/main/proto/cometbft/types/v1/params.proto#L13)
 will be updated to include new fields as follows:
 
 ```diff
@@ -204,7 +204,7 @@ type FeatureParams struct {
 ```
 
 The semantics are similar to the ones adopted to enable vote extensions via
-[`VoteExtensionsEnableHeight`](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md#abciparamsvoteextensionsenableheight).
+[`VoteExtensionsEnableHeight`](https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci++_app_requirements.md#abciparamsvoteextensionsenableheight).
 The PBTS algorithm is enabled from `FeatureParams.PbtsEnableHeight`, when this
 parameter is set to a value greater than zero, and greater to the height at
 which it was set.
@@ -218,7 +218,7 @@ For more discussion of this, see [issue 2197][issue2197].
 #### Proposer selects block timestamp
 
 CometBFT currently uses the `BFT Time` algorithm to produce the block's `Header.Timestamp`.
-The [block production logic](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/state.go#L248)
+The [block production logic](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/state.go#L248)
 sets the weighted median of the times in the `LastCommit.CommitSigs` as the proposed block's `Header.Timestamp`.
 This method will be preserved, but it is only used while operating in `BFT Time` mode.
 
@@ -242,13 +242,13 @@ The proposer will set the re-proposed block's `Header.Timestamp` as the `Proposa
 #### Proposer waits
 
 Block timestamps must be monotonically increasing.
-In `BFT Time`, if a validator’s clock was behind, the [validator added 1 millisecond to the previous block’s time and used that in its vote messages](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/consensus/state.go#L2460).
+In `BFT Time`, if a validator’s clock was behind, the [validator added 1 millisecond to the previous block’s time and used that in its vote messages](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/consensus/state.go#L2460).
 A goal of adding PBTS is to enforce some degree of clock synchronization, so having a mechanism that completely ignores the Unix time of the validator time no longer works.
 Validator clocks will not be perfectly in sync.
 Therefore, the proposer’s current known Unix time may be less than the previous block's `Header.Time`.
 If the proposer’s current known Unix time is less than the previous block's `Header.Time`, the proposer will sleep until its known Unix time exceeds it.
 
-This change will require amending the [`defaultDecideProposal`](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/consensus/state.go#L1195) method.
+This change will require amending the [`defaultDecideProposal`](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/consensus/state.go#L1195) method.
 This method should now schedule a timeout that fires when the proposer’s time is greater than the previous block's `Header.Time`.
 When the timeout fires, the proposer will finally issue the `Proposal` message.
 
@@ -265,7 +265,7 @@ The validation logic will be updated to check `timely` for blocks that did not p
 
 #### Timestamp validation when a block has not received a Polka
 
-The [`POLRound`](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/proposal.go#L29) in the `Proposal` message indicates which round the block received a Polka.
+The [`POLRound`](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/proposal.go#L29) in the `Proposal` message indicates which round the block received a Polka.
 A negative value in the `POLRound` field indicates that the block has not previously been proposed on the network.
 Therefore the validation logic will check for timely when `POLRound == -1`.
 
@@ -337,7 +337,7 @@ Its proposal validation rules will change in the same ways that validation will 
 <!---
 ### Remove voteTime Completely
 
-[voteTime](https://github.com/cometbft/cometbft/blob/822893615564cb20b002dd5cf3b42b8d364cb7d9/internal/consensus/state.go#L2229) is a mechanism for calculating the next `BFT Time` given both the validator's current known Unix time and the previous block timestamp.
+[voteTime](https://github.com/depinnetwork/por-consensus/blob/822893615564cb20b002dd5cf3b42b8d364cb7d9/internal/consensus/state.go#L2229) is a mechanism for calculating the next `BFT Time` given both the validator's current known Unix time and the previous block timestamp.
 If the previous block timestamp is greater than the validator's current known Unix time, then voteTime returns a value one millisecond greater than the previous block timestamp.
 This logic is used in multiple places and is no longer needed for PBTS.
 It should therefore be removed completely.
@@ -350,23 +350,23 @@ then presents how it will work with PBTS.
 
 #### Current block time validation logic
 
-The [`validateBlock` function](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/validation.go#L15) currently [validates the proposed block timestamp in three ways](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/validation.go#L116).
+The [`validateBlock` function](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/validation.go#L15) currently [validates the proposed block timestamp in three ways](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/internal/state/validation.go#L116).
 First, the validation logic checks that this timestamp is greater than the previous block’s timestamp.
 
-Second, it validates that the block timestamp is correctly calculated as the weighted median of the timestamps in the [block’s `LastCommit`](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/block.go#L49).
+Second, it validates that the block timestamp is correctly calculated as the weighted median of the timestamps in the [block’s `LastCommit`](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/block.go#L49).
 
 Finally, the validation logic authenticates the timestamps in the `LastCommit.CommitSig`.
 The cryptographic signature in each `CommitSig` is created by signing a hash of fields in the block with the voting validator’s private key.
 One of the items in this `signedBytes` hash is the timestamp in the `CommitSig`.
 To authenticate the `CommitSig` timestamp, the node authenticating votes builds a hash of fields that includes the `CommitSig` timestamp and checks this hash against the signature.
-This takes place in the [`VerifyCommit` function](https://github.com/cometbft/cometbft/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/validation.go#L26).
+This takes place in the [`VerifyCommit` function](https://github.com/depinnetwork/por-consensus/blob/1f430f51f0e390cd7c789ba9b1e9b35846e34642/types/validation.go#L26).
 
 <!---
 #### Remove unused timestamp validation logic
 
 `BFT Time` validation is no longer applicable and will be removed.
 This means that validators will no longer check that the block timestamp is a weighted median of `LastCommit` timestamps.
-Specifically, we will remove the call to [MedianTime in the validateBlock function](https://github.com/cometbft/cometbft/blob/4db71da68e82d5cb732b235eeb2fd69d62114b45/state/validation.go#L117).
+Specifically, we will remove the call to [MedianTime in the validateBlock function](https://github.com/depinnetwork/por-consensus/blob/4db71da68e82d5cb732b235eeb2fd69d62114b45/state/validation.go#L117).
 The `MedianTime` function can be completely removed.
 
 Since `CommitSig`s will no longer contain a timestamp, the validator authenticating a commit will no longer include the `CommitSig` timestamp in the hash of fields it builds to check against the cryptographic signature.
@@ -394,7 +394,7 @@ as votes for the same block, height and round become identical.
 We have left the removal of the `Timestamp` field of vote messages out for the time being, as it would break the block format and validation
 rules (signature verification) and thus may force a hard-fork on chains upgrading to the latest version of CometBFT.
 We will remove the timestamps in votes when changing the block format is supported in CometBFT without
-requiring a hard-fork (this feature is called [Soft Upgrades](https://github.com/cometbft/cometbft/issues/122)).
+requiring a hard-fork (this feature is called [Soft Upgrades](https://github.com/depinnetwork/por-consensus/issues/122)).
 
 ## Consequences
 
@@ -427,9 +427,9 @@ At this point, the transition from BFT Time to PBTS should be smooth.
 * [PBTS: support both PBTS and legacy BFT Time #2063][issue2063]
 * [PBTS: should synchrony parameters be adaptive? #2184][issue2184]
 
-[issue2184]: https://github.com/cometbft/cometbft/issues/2184
-[issue2197]: https://github.com/cometbft/cometbft/issues/2197
-[issue2063]: https://github.com/cometbft/cometbft/issues/2063
-[bfttime]: https://github.com/cometbft/cometbft/blob/main/spec/consensus/bft-time.md
-[pbts-spec]: https://github.com/cometbft/cometbft/tree/main/spec/consensus/proposer-based-timestamp/README.md
-[original-adr]: https://github.com/cometbft/cometbft/blob/main/docs/references/architecture/tendermint-core/adr-071-proposer-based-timestamps.md
+[issue2184]: https://github.com/depinnetwork/por-consensus/issues/2184
+[issue2197]: https://github.com/depinnetwork/por-consensus/issues/2197
+[issue2063]: https://github.com/depinnetwork/por-consensus/issues/2063
+[bfttime]: https://github.com/depinnetwork/por-consensus/blob/main/spec/consensus/bft-time.md
+[pbts-spec]: https://github.com/depinnetwork/por-consensus/tree/main/spec/consensus/proposer-based-timestamp/README.md
+[original-adr]: https://github.com/depinnetwork/por-consensus/blob/main/docs/references/architecture/tendermint-core/adr-071-proposer-based-timestamps.md

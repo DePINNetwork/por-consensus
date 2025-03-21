@@ -3,13 +3,13 @@ package light_test
 import (
 	"time"
 
-	cmtversion "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	"github.com/cometbft/cometbft/version"
+	cmtversion "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/types"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 // privKeys is a helper type for testing.

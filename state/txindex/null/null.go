@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/state/txindex"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	"github.com/depinnetwork/por-consensus/state/txindex"
 )
 
 var _ txindex.TxIndexer = (*TxIndex)(nil)

@@ -7,11 +7,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	"github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	rpctest "github.com/cometbft/cometbft/rpc/test"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	"github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	rpctest "github.com/depinnetwork/por-consensus/rpc/test"
 )
 
 func ExampleHTTP_simple() {

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/light/provider"
-	"github.com/cometbft/cometbft/types"
+	cmtbytes "github.com/depinnetwork/por-consensus/libs/bytes"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var (

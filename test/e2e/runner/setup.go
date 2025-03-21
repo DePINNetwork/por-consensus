@@ -21,14 +21,14 @@ import (
 
 	_ "embed"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/privval"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/test/e2e/pkg/infra"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/privval"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
+	"github.com/depinnetwork/por-consensus/test/e2e/pkg/infra"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

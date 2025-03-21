@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	abciserver "github.com/cometbft/cometbft/abci/server"
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/log"
+	abcicli "github.com/depinnetwork/por-consensus/abci/client"
+	abciserver "github.com/depinnetwork/por-consensus/abci/server"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/libs/log"
 )
 
 const (

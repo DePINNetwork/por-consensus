@@ -3,7 +3,7 @@ package test
 import (
 	"time"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 func GenesisDoc(

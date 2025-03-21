@@ -15,7 +15,7 @@ import (
 
 	"github.com/goccmack/goutil/ioutil"
 
-	"github.com/cometbft/cometbft/test/e2e/pkg/grammar/grammar-auto/parser/symbols"
+	"github.com/depinnetwork/por-consensus/test/e2e/pkg/grammar/grammar-auto/parser/symbols"
 )
 
 type Node interface {

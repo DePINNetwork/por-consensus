@@ -12,7 +12,7 @@
 
 Accepted
 
-[Tracking issue](https://github.com/cometbft/cometbft/issues/1666)
+[Tracking issue](https://github.com/depinnetwork/por-consensus/issues/1666)
 
 ## Context
 
@@ -109,8 +109,8 @@ those that have an ad-hoc mechanism for transaction dissemination that better me
 The ABCI application could reuse the P2P network once this is exposed via ABCI.
 But this will take some time as it needs to be implemented, and has a dependency
 on bi-directional ABCI, which is also quite substantial. See
-[1](https://github.com/cometbft/cometbft/discussions/1112) and
-[2](https://github.com/cometbft/cometbft/discussions/494) discussions.
+[1](https://github.com/depinnetwork/por-consensus/discussions/1112) and
+[2](https://github.com/depinnetwork/por-consensus/discussions/494) discussions.
 
 We propose to introduce a `nop` (short for no operation) mempool which will effectively act as a stubbed object
 internally:
@@ -319,6 +319,6 @@ In that sense, it is out of the scope of this ADR.
   network upon `FinalizeBlock`.
   
 [sdk-app-mempool]: https://docs.cosmos.network/v0.47/build/building-apps/app-mempool
-[adr-110]: https://github.com/cometbft/cometbft/pull/1565
+[adr-110]: https://github.com/depinnetwork/por-consensus/pull/1565
 [HT94]: https://dl.acm.org/doi/book/10.5555/866693
-[cat-mempool]: https://github.com/cometbft/cometbft/pull/1472
+[cat-mempool]: https://github.com/depinnetwork/por-consensus/pull/1472

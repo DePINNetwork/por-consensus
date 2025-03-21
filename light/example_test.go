@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/light"
-	"github.com/cometbft/cometbft/light/provider"
-	httpp "github.com/cometbft/cometbft/light/provider/http"
-	dbs "github.com/cometbft/cometbft/light/store/db"
-	rpctest "github.com/cometbft/cometbft/rpc/test"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/light"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	httpp "github.com/depinnetwork/por-consensus/light/provider/http"
+	dbs "github.com/depinnetwork/por-consensus/light/store/db"
+	rpctest "github.com/depinnetwork/por-consensus/rpc/test"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
 )
 
 // Automatically getting new headers and verifying them.

@@ -9,14 +9,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/internal/test"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/light"
-	"github.com/cometbft/cometbft/light/provider"
-	mockp "github.com/cometbft/cometbft/light/provider/mock"
-	dbs "github.com/cometbft/cometbft/light/store/db"
-	"github.com/cometbft/cometbft/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/light"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	mockp "github.com/depinnetwork/por-consensus/light/provider/mock"
+	dbs "github.com/depinnetwork/por-consensus/light/store/db"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

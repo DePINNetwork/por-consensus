@@ -13,16 +13,16 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/cometbft/cometbft/config"
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/light"
-	lproxy "github.com/cometbft/cometbft/light/proxy"
-	lrpc "github.com/cometbft/cometbft/light/rpc"
-	dbs "github.com/cometbft/cometbft/light/store/db"
-	rpcserver "github.com/cometbft/cometbft/rpc/jsonrpc/server"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/light"
+	lproxy "github.com/depinnetwork/por-consensus/light/proxy"
+	lrpc "github.com/depinnetwork/por-consensus/light/rpc"
+	dbs "github.com/depinnetwork/por-consensus/light/store/db"
+	rpcserver "github.com/depinnetwork/por-consensus/rpc/jsonrpc/server"
 )
 
 // LightCmd represents the base command when called without any subcommands.

@@ -7,9 +7,9 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/require"
 
-	ssproto "github.com/cometbft/cometbft/api/cometbft/statesync/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/types"
+	ssproto "github.com/depinnetwork/por-consensus/api/cometbft/statesync/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 func TestValidateMsg(t *testing.T) {

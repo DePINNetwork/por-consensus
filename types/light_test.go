@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtversion "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	"github.com/cometbft/cometbft/crypto"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	"github.com/cometbft/cometbft/version"
+	cmtversion "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 func TestLightBlockValidateBasic(t *testing.T) {

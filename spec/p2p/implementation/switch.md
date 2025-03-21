@@ -50,11 +50,11 @@ The `DialPeersAsync` method receives a list of peer addresses (strings)
 and dials all of them in parallel.
 It is invoked in two situations:
 
-- In the [setup](https://github.com/cometbft/cometbft/blob/v0.34.x/node/node.go#L987)
+- In the [setup](https://github.com/depinnetwork/por-consensus/blob/v0.34.x/node/node.go#L987)
 of a node, to establish connections with every configured persistent peer
 - In the RPC package, to implement two unsafe RPC commands, not used in production:
-  [`DialSeeds`](https://github.com/cometbft/cometbft/blob/v0.34.x/rpc/core/net.go#L47) and
-  [`DialPeers`](https://github.com/cometbft/cometbft/blob/v0.34.x/rpc/core/net.go#L87)
+  [`DialSeeds`](https://github.com/depinnetwork/por-consensus/blob/v0.34.x/rpc/core/net.go#L47) and
+  [`DialPeers`](https://github.com/depinnetwork/por-consensus/blob/v0.34.x/rpc/core/net.go#L87)
 
 The received list of peer addresses to dial is parsed into `NetAddress` instances.
 In case of parsing errors, the method returns. An exception is made for
@@ -104,7 +104,7 @@ The exponentially increasing dialing interval is adjusted as well by a random
 jitter up to `dialRandomizerIntervalMilliseconds`.
 At most `reconnectBackOffAttempts`, hard-coded to 10, are made using this  approach.
 
-> Note: the intervals don't work as expected, see [#3519](https://github.com/cometbft/cometbft/issues/3519).
+> Note: the intervals don't work as expected, see [#3519](https://github.com/depinnetwork/por-consensus/issues/3519).
 
 ## Accepting peers
 

@@ -159,6 +159,6 @@ current, past, and rate-of-change data to inform peer quality.
 While a PID trust metric has been implemented, it remains for future work
 to use it in the PEX.
 
-See the [trustmetric](https://github.com/cometbft/cometbft/blob/master/docs/architecture/adr-006-trust-metric.md)
-and [trustmetric usage](https://github.com/cometbft/cometbft/blob/master/docs/architecture/adr-007-trust-metric-usage.md)
+See the [trustmetric](https://github.com/depinnetwork/por-consensus/blob/master/docs/architecture/adr-006-trust-metric.md)
+and [trustmetric usage](https://github.com/depinnetwork/por-consensus/blob/master/docs/architecture/adr-007-trust-metric-usage.md)
 architecture docs for more details.

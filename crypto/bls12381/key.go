@@ -5,7 +5,7 @@ package bls12381
 import (
 	"errors"
 
-	"github.com/cometbft/cometbft/crypto"
+	"github.com/depinnetwork/por-consensus/crypto"
 )
 
 const (

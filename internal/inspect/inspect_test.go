@@ -14,16 +14,16 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abcitypes "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/inspect"
-	"github.com/cometbft/cometbft/internal/test"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	httpclient "github.com/cometbft/cometbft/rpc/client/http"
-	indexermocks "github.com/cometbft/cometbft/state/indexer/mocks"
-	statemocks "github.com/cometbft/cometbft/state/mocks"
-	txindexmocks "github.com/cometbft/cometbft/state/txindex/mocks"
-	"github.com/cometbft/cometbft/types"
+	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/inspect"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	httpclient "github.com/depinnetwork/por-consensus/rpc/client/http"
+	indexermocks "github.com/depinnetwork/por-consensus/state/indexer/mocks"
+	statemocks "github.com/depinnetwork/por-consensus/state/mocks"
+	txindexmocks "github.com/depinnetwork/por-consensus/state/txindex/mocks"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 func TestInspectConstructor(t *testing.T) {
@@ -267,7 +267,7 @@ func TestBlockResults(t *testing.T) {
 	testGasUsed := int64(100)
 	stateStoreMock := &statemocks.Store{}
 	stateStoreMock.On("Close").Return(nil)
-	//	cmtstate "github.com/cometbft/cometbft/api/cometbft/state/v1"
+	//	cmtstate "github.com/depinnetwork/por-consensus/api/cometbft/state/v1"
 	stateStoreMock.On("LoadFinalizeBlockResponse", testHeight).Return(&abcitypes.FinalizeBlockResponse{
 		TxResults: []*abcitypes.ExecTxResult{
 			{

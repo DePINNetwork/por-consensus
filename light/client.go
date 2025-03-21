@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/light/provider"
-	"github.com/cometbft/cometbft/light/store"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	"github.com/depinnetwork/por-consensus/light/store"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 type mode byte

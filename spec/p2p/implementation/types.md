@@ -5,7 +5,7 @@ implement the p2p layer, and summarizes the main types they implement.
 Types play the role of classes in Go.
 
 The reference version for this documentation is the branch
-[`v0.34.x`](https://github.com/cometbft/cometbft/tree/v0.34.x/p2p).
+[`v0.34.x`](https://github.com/depinnetwork/por-consensus/tree/v0.34.x/p2p).
 
 State of August 2022.
 

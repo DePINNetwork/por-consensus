@@ -711,9 +711,9 @@ late, possibly having lane definitions that do not match with those of nodes at 
 - [Cosmovisor][cosmovisor]
 - [Mempool's cache][cache]
 
-[cache]: https://github.com/cometbft/cometbft/blob/main/spec/mempool/cache.md
+[cache]: https://github.com/depinnetwork/por-consensus/blob/main/spec/mempool/cache.md
 [adr067]: ./tendermint-core/adr-067-mempool-refactor.md
-[reapmaxbytesmaxgas]: https://github.com/cometbft/cometbft/blob/v0.37.6/mempool/v1/mempool.go#L315-L324
+[reapmaxbytesmaxgas]: https://github.com/depinnetwork/por-consensus/blob/v0.37.6/mempool/v1/mempool.go#L315-L324
 [gulf-stream]: https://medium.com/solana-labs/gulf-stream-solanas-mempool-less-transaction-forwarding-protocol-d342e72186ad
 [solana-prio-fees]: https://solana.com/developers/guides/advanced/how-to-use-priority-fees
 [prio-fee-price]: https://solana.com/developers/guides/advanced/how-to-use-priority-fees
@@ -721,8 +721,8 @@ late, possibly having lane definitions that do not match with those of nodes at 
 [sdk-app-mempool]: https://docs.cosmos.network/v0.47/build/building-apps/app-mempool
 [skip-block-sdk]: https://github.com/skip-mev/block-sdk/blob/v2.1.3/README.md
 [cosmovisor]: https://docs.cosmos.network/v0.50/build/tooling/cosmovisor
-[selectChannelToGossipOn]: https://github.com/cometbft/cometbft/blob/6d3ff343c2d5a06e7522344d1a4e17d24ce982ad/p2p/conn/connection.go#L542-L563
+[selectChannelToGossipOn]: https://github.com/depinnetwork/por-consensus/blob/6d3ff343c2d5a06e7522344d1a4e17d24ce982ad/p2p/conn/connection.go#L542-L563
 [wrr]: https://en.wikipedia.org/wiki/Weighted_round_robin
 [based-preconfs]: https://ethresear.ch/t/based-preconfirmations/17353
 [Oconfs]: https://www.reddit.com/r/btc/comments/vxr3qf/explaining_0_conf_transactions/
-[tracking-issue]: https://github.com/cometbft/cometbft/issues/2803
+[tracking-issue]: https://github.com/depinnetwork/por-consensus/issues/2803

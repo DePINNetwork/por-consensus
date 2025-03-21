@@ -3,4 +3,4 @@
     a tx or block hash when the stringer interface is invoked. Good for use
     with debug statements so the item is only hashed when print is invoked
   * tx `Hash` ret type changed to HexBytes to fit this interface
-  [\#4340](https://github.com/cometbft/cometbft/pull/4340)
+  [\#4340](https://github.com/depinnetwork/por-consensus/pull/4340)

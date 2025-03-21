@@ -9,15 +9,15 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	lru "github.com/hashicorp/golang-lru/v2"
 
-	cmtstore "github.com/cometbft/cometbft/api/cometbft/store/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/internal/evidence"
-	"github.com/cometbft/cometbft/libs/metrics"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
-	cmterrors "github.com/cometbft/cometbft/types/errors"
+	cmtstore "github.com/depinnetwork/por-consensus/api/cometbft/store/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/internal/evidence"
+	"github.com/depinnetwork/por-consensus/libs/metrics"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/types"
+	cmterrors "github.com/depinnetwork/por-consensus/types/errors"
 )
 
 // Assuming the length of a block part is 64kB (`types.BlockPartSizeBytes`),

@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/service"
 )
 
 // ServiceProvider takes a config and a logger and returns a ready to go Node.

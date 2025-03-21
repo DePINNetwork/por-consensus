@@ -5,7 +5,7 @@ import (
 	"os"
 	"text/template"
 
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
 )
 
 // GenerateIPZonesTable generates a file with a table mapping IP addresses to geographical zone for latencies.

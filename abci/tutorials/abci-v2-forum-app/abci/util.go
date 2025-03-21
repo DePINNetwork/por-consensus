@@ -9,9 +9,9 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 
-	"github.com/cometbft/cometbft/abci/tutorials/abci-v2-forum-app/model"
-	"github.com/cometbft/cometbft/abci/types"
-	cryptoencoding "github.com/cometbft/cometbft/crypto/encoding"
+	"github.com/depinnetwork/por-consensus/abci/tutorials/abci-v2-forum-app/model"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	cryptoencoding "github.com/depinnetwork/por-consensus/crypto/encoding"
 )
 
 func isBanTx(tx []byte) bool {

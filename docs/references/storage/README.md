@@ -10,13 +10,13 @@ As of Q3 2023, the CometBFT team has dedicated significant resources addressing 
 5. The representation of keys CometBFT uses to store block and state data is suboptimal for the way this data is sorted within most kvstores. This work was [started in Tendermint 0.36](https://github.com/tendermint/tendermint/pull/5771) but not completed. We picked up that work and experimented with the proposed data layout.
 
 All the experiments were performed on `main` after `v1-alpha.1` was released. The experiments on Injective were done on custom branches porting the changes to `0.37.x` with the changes Injective has on their fork of 0.37:
-- [Injective testing "v1"](https://github.com/cometbft/cometbft/tree/storage/tmp/injective/v0.37.x-testing-validator)
-- [Injective testing "v2"](https://github.com/cometbft/cometbft/tree/storage/tmp/injective/v0.37.x-testing-newlayout-validator)
+- [Injective testing "v1"](https://github.com/depinnetwork/por-consensus/tree/storage/tmp/injective/v0.37.x-testing-validator)
+- [Injective testing "v2"](https://github.com/depinnetwork/por-consensus/tree/storage/tmp/injective/v0.37.x-testing-newlayout-validator)
 
 We also have non Injective specific backports to 0.37.x based code in the following branches:
 
-- [Old keylayout](https://github.com/cometbft/cometbft/tree/storage/tmp/v0.37.x-testing-validator)
-- [New key layout](https://github.com/cometbft/cometbft/tree/storage/tmp/v0.37.x-testing-validator)
+- [Old keylayout](https://github.com/depinnetwork/por-consensus/tree/storage/tmp/v0.37.x-testing-validator)
+- [New key layout](https://github.com/depinnetwork/por-consensus/tree/storage/tmp/v0.37.x-testing-validator)
 
 These branches are however used only for testing and development purposes and are not meant nor designed to be used in production. 
 
@@ -36,7 +36,7 @@ By the end of Q3 we have addressed and documented the second problem by introduc
 
 For comparison, until then, CometBFT would only prune the block and state store (not including ABCI results), based on instructions from the application.
 
-More details on the API itself and how it can be used can be found in the corresponding [ADR](https://github.com/cometbft/cometbft/blob/main/docs/references/architecture/adr-101-data-companion-pull-api.md) and [documentation](https://github.com/cometbft/cometbft/tree/main/docs/explanation/data-companion).
+More details on the API itself and how it can be used can be found in the corresponding [ADR](https://github.com/depinnetwork/por-consensus/blob/main/docs/references/architecture/adr-101-data-companion-pull-api.md) and [documentation](https://github.com/depinnetwork/por-consensus/tree/main/docs/explanation/data-companion).
 
 The rest of this report covers the changes and their impact related to fixing and improving the pruning related points (1 and 3) as well as supporting a new data key layout (point 5). The results are obtained using `goleveldb` as the default backend unless stated otherwise. 
 
@@ -87,7 +87,7 @@ The experiments were ran in a number of different settings:
  - New layout - pruning, no forced compaction
  - New layout - pruning and forced compaction
 
- We have also experimented with a [third key layout option](https://github.com/cometbft/cometbft/pull/1814), from which we initially expected the most: The new layout combined with insights into the access pattern of CometBFT to order together keys frequently accessed. In all
+ We have also experimented with a [third key layout option](https://github.com/depinnetwork/por-consensus/pull/1814), from which we initially expected the most: The new layout combined with insights into the access pattern of CometBFT to order together keys frequently accessed. In all
  our experiments, when running CometBFT using this layout was less efficient than the other two and we therefore dismissed it.
 
  We reduced the `timeout_commit` in this setup to 300ms to speed up execution. The load was generated using `test/loadtime` with the following parameters: `-c 1 -T 3600 -r 1000 -s 8096`, sending 8KB transactions at a rate of 1000txs/s for 1h. 
@@ -125,7 +125,7 @@ Unfortunately, many users have noticed that, despite the pruning feature based o
 
 After some research, we found that some of the database backends can be forced to compact the data. We experimented on it and confirmed those findings.
 
-That is why we extended `cometbft-db`, [with an API](https://github.com/cometbft/cometbft-db/pull/111) to instruct the database to compact the files. Then we made sure that CometBFT [calls](https://github.com/cometbft/cometbft/pull/1972) this function after blocks are pruned. 
+That is why we extended `cometbft-db`, [with an API](https://github.com/depinnetwork/por-consensus-db/pull/111) to instruct the database to compact the files. Then we made sure that CometBFT [calls](https://github.com/depinnetwork/por-consensus/pull/1972) this function after blocks are pruned. 
 
 To evaluate whether this was really beneficial, we ran a couple of experiments and recorded the storage used:
 
@@ -142,7 +142,7 @@ To evaluate whether this was really beneficial, we ran a couple of experiments a
  nodes without pruning. The fact that the footprint of *validator05* has a lower footprint than 
  *validator03* stems from the compaction logic of `goleveldb`. As the keys on *validator03* are sorted
  by height, new data is simply appended without the need to reshuffle very old levels with old heights. 
- On *validator05*, keys are sorted lexicographically leading to `goleveldb` *touching* more levels on insertions. By default, the conditions for triggering compaction are evaluated only when a file is touched. This is the reason why random key order leads to more frequent compaction. (This was also confirmed by [findings](https://github.com/cometbft/cometbft/files/12914649/DB.experiments.pdf) done by our intern in Q3/Q4 2023 on goleveldb without Comet on top, part of the [issue](https://github.com/cometbft/cometbft/issues/64) to understand the database backends and decide which one to optimize and choose.). 
+ On *validator05*, keys are sorted lexicographically leading to `goleveldb` *touching* more levels on insertions. By default, the conditions for triggering compaction are evaluated only when a file is touched. This is the reason why random key order leads to more frequent compaction. (This was also confirmed by [findings](https://github.com/depinnetwork/por-consensus/files/12914649/DB.experiments.pdf) done by our intern in Q3/Q4 2023 on goleveldb without Comet on top, part of the [issue](https://github.com/depinnetwork/por-consensus/issues/64) to understand the database backends and decide which one to optimize and choose.). 
 
 
 ### Production - Injective mainnet

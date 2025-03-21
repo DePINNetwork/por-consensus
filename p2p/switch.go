@@ -6,15 +6,15 @@ import (
 	"math"
 	"time"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/cmap"
-	"github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/service"
-	ni "github.com/cometbft/cometbft/p2p/internal/nodeinfo"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	"github.com/cometbft/cometbft/p2p/transport"
-	"github.com/cometbft/cometbft/p2p/transport/tcp"
+	"github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/cmap"
+	"github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	ni "github.com/depinnetwork/por-consensus/p2p/internal/nodeinfo"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
+	"github.com/depinnetwork/por-consensus/p2p/transport/tcp"
 )
 
 const (

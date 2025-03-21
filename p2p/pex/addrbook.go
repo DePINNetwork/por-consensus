@@ -16,14 +16,14 @@ import (
 
 	"github.com/minio/highwayhash"
 
-	"github.com/cometbft/cometbft/crypto"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
 )
 
 const (

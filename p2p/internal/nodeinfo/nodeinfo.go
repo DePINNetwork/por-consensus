@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"reflect"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	cmtstrings "github.com/cometbft/cometbft/internal/strings"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	cmtstrings "github.com/depinnetwork/por-consensus/internal/strings"
+	cmtbytes "github.com/depinnetwork/por-consensus/libs/bytes"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
 )
 
 const (

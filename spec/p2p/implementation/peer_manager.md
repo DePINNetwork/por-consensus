@@ -86,8 +86,8 @@ peers, a node immediately attempts to dial peer addresses when they are
 received from a peer that is locally configured as a seed node.
 
 > This was implemented in a rough way, leading to inconsistencies described in
-> this [issue](https://github.com/cometbft/cometbft/issues/486),
-> fixed by this [PR](https://github.com/cometbft/cometbft/pull/3360).
+> this [issue](https://github.com/depinnetwork/por-consensus/issues/486),
+> fixed by this [PR](https://github.com/depinnetwork/por-consensus/pull/3360).
 
 ### First round
 

@@ -7,17 +7,17 @@ import (
 
 	"github.com/spf13/cobra"
 
-	abcitypes "github.com/cometbft/cometbft/abci/types"
-	cmtcfg "github.com/cometbft/cometbft/config"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/internal/progressbar"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/indexer"
-	blockidxkv "github.com/cometbft/cometbft/state/indexer/block/kv"
-	"github.com/cometbft/cometbft/state/indexer/sink/psql"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/state/txindex/kv"
-	"github.com/cometbft/cometbft/types"
+	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/internal/progressbar"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	blockidxkv "github.com/depinnetwork/por-consensus/state/indexer/block/kv"
+	"github.com/depinnetwork/por-consensus/state/indexer/sink/psql"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/state/txindex/kv"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

@@ -191,8 +191,8 @@ Implementing such changes would still involve substantial refactoring, but much
 less so than introducing a full-blown actor system. It would also allow for
 progressive refactoring of reactors/services over time.
 
-[event-bus]: https://github.com/cometbft/cometbft/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/types/event_bus.go#L33
-[switch]: https://github.com/cometbft/cometbft/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/p2p/switch.go#L70
+[event-bus]: https://github.com/depinnetwork/por-consensus/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/types/event_bus.go#L33
+[switch]: https://github.com/depinnetwork/por-consensus/blob/b23ef56f8e6d8a7015a7f816a61f2e53b0b07b0d/p2p/switch.go#L70
 [Actor]: https://en.wikipedia.org/wiki/Actor_model
 [Erlang]: https://www.erlang.org/
 [Akka]: https://akka.io/

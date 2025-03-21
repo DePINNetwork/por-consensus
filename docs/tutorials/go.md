@@ -54,7 +54,7 @@ go version go1.23.6 darwin/amd64
 Let's install `CometBFT` locally by running the following command:
 
 ```bash
-go install github.com/cometbft/cometbft/cmd/cometbft@v1.0
+go install github.com/depinnetwork/por-consensus/cmd/cometbft@v1.0
 ```
 
 Test the installation:
@@ -121,14 +121,14 @@ go: to add module requirements and sums:
 Now, lets add `cometbft` as a dependency to our project. Run the `go get` command below:
 
 ```bash
-go get github.com/cometbft/cometbft@v1.0
+go get github.com/depinnetwork/por-consensus@v1.0
 ```
 
 **NOTE**: This will add the latest release in the `v1.0` line, so you might a different patch release e.g. `v1.0.0`
 or `v1.0.1`
 
 ```bash
-go: added github.com/cometbft/cometbft v1.0.0
+go: added github.com/depinnetwork/por-consensus v1.0.0
 ```
 
 After running the above commands you will see two generated files, `go.mod` and `go.sum`.
@@ -140,7 +140,7 @@ module kvstore
 go 1.23
 
 
-require github.com/cometbft/cometbft v1.0.0 // indirect
+require github.com/depinnetwork/por-consensus v1.0.0 // indirect
 ```
 
 As you write the kvstore application, you can rebuild the binary by
@@ -172,11 +172,11 @@ Now, let's start adding some logic to our application.
 CometBFT communicates with the application through the Application
 BlockChain Interface (`ABCI`). The messages exchanged through the interface are
 defined in the ABCI [protobuf
-file](https://github.com/cometbft/cometbft/blob/main/proto/cometbft/abci/v1/types.proto).
+file](https://github.com/depinnetwork/por-consensus/blob/main/proto/cometbft/abci/v1/types.proto).
 
 We begin by creating the basic scaffolding for an ABCI application by
 creating a new type, `KVStoreApplication`, which implements the
-methods defined by the [abcitypes.Application](https://github.com/cometbft/cometbft/blob/main/abci/types/application.go) interface.
+methods defined by the [abcitypes.Application](https://github.com/depinnetwork/por-consensus/blob/main/abci/types/application.go) interface.
 
 Create a file called `app.go` with the following contents:
 
@@ -184,7 +184,7 @@ Create a file called `app.go` with the following contents:
 package main
 
 import (
-    abcitypes "github.com/cometbft/cometbft/abci/types"
+    abcitypes "github.com/depinnetwork/por-consensus/abci/types"
     "context"
 )
 
@@ -257,7 +257,7 @@ The types used here are defined in the CometBFT library and were added as a depe
 to the project when you ran `go get`. If your IDE is not recognizing the types, go ahead and run the command again.
 
 ```bash
-go get github.com/cometbft/cometbft@v1.0
+go get github.com/depinnetwork/por-consensus@v1.0
 ```
 
 Now go back to the `main.go` and modify the `main` function so it matches the following,
@@ -311,7 +311,7 @@ Next, update the `import` stanza at the top to include the Badger library:
 ```go
 import (
     "context"
-    abcitypes "github.com/cometbft/cometbft/abci/types"
+    abcitypes "github.com/depinnetwork/por-consensus/abci/types"
     "github.com/dgraph-io/badger/v4"
 )
 ```
@@ -375,7 +375,7 @@ Finally, make sure to add the bytes package to the `import` stanza at the top of
 import (
     "bytes"
     "context"
-    abcitypes "github.com/cometbft/cometbft/abci/types"
+    abcitypes "github.com/depinnetwork/por-consensus/abci/types"
     "github.com/dgraph-io/badger/v4"
 )
 ```
@@ -470,7 +470,7 @@ import (
     "bytes"
     "context"
 	"errors"
-    abcitypes "github.com/cometbft/cometbft/abci/types"
+    abcitypes "github.com/depinnetwork/por-consensus/abci/types"
     "github.com/dgraph-io/badger/v4"
     "log"
 )
@@ -577,7 +577,7 @@ package main
 import (
     "flag"
     "fmt"
-    abciserver "github.com/cometbft/cometbft/abci/server"
+    abciserver "github.com/depinnetwork/por-consensus/abci/server"
     "log"
     "os"
     "os/signal"
@@ -585,7 +585,7 @@ import (
     "syscall"
 
     "github.com/dgraph-io/badger/v4"
-    cmtlog "github.com/cometbft/cometbft/libs/log"
+    cmtlog "github.com/depinnetwork/por-consensus/libs/log"
 )
 
 var homeDir string
@@ -819,4 +819,4 @@ The events (`abcitypes.Event`) added in `FinalizeBlock` are indexed by CometBFT 
 
 ## Outro
 
-Hope you could run everything smoothly. If you have any difficulties running through this tutorial, reach out to us via [discord](https://discord.com/invite/interchain) or open a new [issue](https://github.com/cometbft/cometbft/issues/new/choose) on Github.
+Hope you could run everything smoothly. If you have any difficulties running through this tutorial, reach out to us via [discord](https://discord.com/invite/interchain) or open a new [issue](https://github.com/depinnetwork/por-consensus/issues/new/choose) on Github.

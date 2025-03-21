@@ -1,12 +1,12 @@
 package core
 
 import (
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/state/txindex/null"
-	"github.com/cometbft/cometbft/types"
+	cmtquery "github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/state/txindex/null"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	mrand "math/rand"
 	"time"
 
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
 )
 
 const (

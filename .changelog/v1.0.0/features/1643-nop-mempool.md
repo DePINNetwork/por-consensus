@@ -1,4 +1,4 @@
-- `[mempool]` Add `nop` mempool ([\#1643](https://github.com/cometbft/cometbft/pull/1643)). If you want to use it, change mempool's `type` to `nop`:
+- `[mempool]` Add `nop` mempool ([\#1643](https://github.com/depinnetwork/por-consensus/pull/1643)). If you want to use it, change mempool's `type` to `nop`:
 ```toml
       [mempool]
 

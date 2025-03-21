@@ -9,15 +9,15 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	protomem "github.com/cometbft/cometbft/api/cometbft/mempool/v2"
-	cfg "github.com/cometbft/cometbft/config"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/p2p"
-	tcpconn "github.com/cometbft/cometbft/p2p/transport/tcp/conn"
-	"github.com/cometbft/cometbft/types"
+	abcicli "github.com/depinnetwork/por-consensus/abci/client"
+	protomem "github.com/depinnetwork/por-consensus/api/cometbft/mempool/v2"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	"github.com/depinnetwork/por-consensus/p2p"
+	tcpconn "github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // A number in the open interval (0, 100) representing a percentage of

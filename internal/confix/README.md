@@ -2,7 +2,7 @@
 
 `Confix` is a configuration management tool that allows you to manage your configuration via CLI.
 
-It is based on the [CometBFT RFC 019](https://github.com/cometbft/cometbft/blob/5013bc3f4a6d64dcc2bf02ccc002ebc9881c62e4/docs/rfc/rfc-019-config-version.md).
+It is based on the [CometBFT RFC 019](https://github.com/depinnetwork/por-consensus/blob/5013bc3f4a6d64dcc2bf02ccc002ebc9881c62e4/docs/rfc/rfc-019-config-version.md).
 
 ## Usage
 
@@ -50,5 +50,5 @@ cometbft config view # views the current config
 
 ## Credits
 
-This project is based on the [CometBFT RFC 019](https://github.com/cometbft/cometbft/blob/5013bc3f4a6d64dcc2bf02ccc002ebc9881c62e4/docs/rfc/rfc-019-config-version.md) and their own implementation of [confix](https://github.com/cometbft/cometbft/blob/v0.36.x/scripts/confix/confix.go).
+This project is based on the [CometBFT RFC 019](https://github.com/depinnetwork/por-consensus/blob/5013bc3f4a6d64dcc2bf02ccc002ebc9881c62e4/docs/rfc/rfc-019-config-version.md) and their own implementation of [confix](https://github.com/depinnetwork/por-consensus/blob/v0.36.x/scripts/confix/confix.go).
 Most of the code is copied over from [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/tree/main/tools/confix).

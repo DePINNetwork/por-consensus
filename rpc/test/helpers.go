@@ -8,17 +8,17 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cfg "github.com/cometbft/cometbft/config"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	"github.com/cometbft/cometbft/internal/test"
-	"github.com/cometbft/cometbft/libs/log"
-	nm "github.com/cometbft/cometbft/node"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/privval"
-	"github.com/cometbft/cometbft/proxy"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpcclient "github.com/cometbft/cometbft/rpc/jsonrpc/client"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	nm "github.com/depinnetwork/por-consensus/node"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/privval"
+	"github.com/depinnetwork/por-consensus/proxy"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/jsonrpc/client"
 )
 
 // Options helps with specifying some parameters for our RPC testing for greater

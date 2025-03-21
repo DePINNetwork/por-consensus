@@ -6,16 +6,16 @@ import (
 	"sync"
 	"time"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	"github.com/cometbft/cometbft/internal/cmap"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	"github.com/cometbft/cometbft/p2p/transport"
-	tcpconn "github.com/cometbft/cometbft/p2p/transport/tcp/conn"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	"github.com/depinnetwork/por-consensus/internal/cmap"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
+	tcpconn "github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
 )
 
 type Peer = p2p.Peer

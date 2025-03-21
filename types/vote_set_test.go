@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/crypto"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
 )
 
 func TestVoteSet_AddVote_Good(t *testing.T) {

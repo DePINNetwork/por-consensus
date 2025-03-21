@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmtpubsub "github.com/depinnetwork/por-consensus/libs/pubsub"
+	cmtquery "github.com/depinnetwork/por-consensus/libs/pubsub/query"
 )
 
 // Reserved event types (alphabetically sorted).

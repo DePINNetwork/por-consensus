@@ -1,1 +1,1 @@
-- `[config]` Add configuration parameters to tweak forced compaction. ([\#1972](https://github.com/cometbft/cometbft/pull/1972))
+- `[config]` Add configuration parameters to tweak forced compaction. ([\#1972](https://github.com/depinnetwork/por-consensus/pull/1972))

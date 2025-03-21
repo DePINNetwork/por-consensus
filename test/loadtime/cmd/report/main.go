@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/test/loadtime/report"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/store"
+	"github.com/depinnetwork/por-consensus/test/loadtime/report"
 )
 
 var (

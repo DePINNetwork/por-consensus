@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"regexp"
 
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
+	cmtbytes "github.com/depinnetwork/por-consensus/libs/bytes"
 )
 
 var (

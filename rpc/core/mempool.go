@@ -5,10 +5,10 @@ import (
 	"errors"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var (

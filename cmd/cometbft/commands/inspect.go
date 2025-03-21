@@ -6,12 +6,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/inspect"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/indexer/block"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/inspect"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/state/indexer/block"
+	"github.com/depinnetwork/por-consensus/store"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // InspectCmd is the command for starting an inspect server.

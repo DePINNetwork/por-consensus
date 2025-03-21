@@ -126,7 +126,7 @@ consensus engine, and provides a particular application state.
 ## ABCI Overview
 
 The [Application BlockChain Interface
-(ABCI)](https://github.com/cometbft/cometbft/tree/main/abci)
+(ABCI)](https://github.com/depinnetwork/por-consensus/tree/main/abci)
 allows for Byzantine Fault Tolerant replication of applications
 written in any programming language.
 
@@ -161,7 +161,7 @@ protocol.
 
 ### Intro to ABCI
 
-[CometBFT](https://github.com/cometbft/cometbft), the
+[CometBFT](https://github.com/depinnetwork/por-consensus), the
 "consensus engine", communicates with the application via a socket
 protocol that satisfies the ABCI, the CometBFT Socket Protocol.
 
@@ -191,7 +191,7 @@ core to the application. The application replies with corresponding
 response messages.
 
 The messages are specified here: [ABCI Message
-Types](https://github.com/cometbft/cometbft/blob/main/proto/tendermint/abci/types.proto).
+Types](https://github.com/depinnetwork/por-consensus/blob/main/proto/tendermint/abci/types.proto).
 
 The **FinalizeBlock** message is the work horse of the application. Each
 transaction in the blockchain is finalized within this message. The

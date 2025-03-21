@@ -3,13 +3,13 @@ package core
 import (
 	"sort"
 
-	"github.com/cometbft/cometbft/libs/bytes"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	blockidxnull "github.com/cometbft/cometbft/state/indexer/block/null"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/libs/bytes"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	cmtquery "github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	blockidxnull "github.com/depinnetwork/por-consensus/state/indexer/block/null"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // BlockchainInfo gets block headers for minHeight <= height <= maxHeight.

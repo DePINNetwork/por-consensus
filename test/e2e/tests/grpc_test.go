@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/version"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 // These tests are in place to confirm that both the non-privileged and privileged GRPC services can be called upon

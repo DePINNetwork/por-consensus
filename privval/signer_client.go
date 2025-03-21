@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	pvproto "github.com/cometbft/cometbft/api/cometbft/privval/v2"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/crypto"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
-	"github.com/cometbft/cometbft/types"
-	cmterrors "github.com/cometbft/cometbft/types/errors"
+	pvproto "github.com/depinnetwork/por-consensus/api/cometbft/privval/v2"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cryptoenc "github.com/depinnetwork/por-consensus/crypto/encoding"
+	"github.com/depinnetwork/por-consensus/types"
+	cmterrors "github.com/depinnetwork/por-consensus/types/errors"
 )
 
 // SignerClient implements PrivValidator.

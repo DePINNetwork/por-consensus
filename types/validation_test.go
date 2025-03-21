@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cryptomocks "github.com/cometbft/cometbft/crypto/mocks"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	cryptomocks "github.com/depinnetwork/por-consensus/crypto/mocks"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
 )
 
 // Check VerifyCommit, VerifyCommitLight and VerifyCommitLightTrusting basic

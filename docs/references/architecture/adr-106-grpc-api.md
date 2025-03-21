@@ -225,13 +225,13 @@ func New(ctx context.Context, addr string, opts ...Option) (Client, error) {
   support).
 - Increases complexity maintaining multiple APIs (gRPC and JSON-RPC) in the short-term (until the JSON-RPC API is definitively extracted and moved outside the node).
 
-[\#81]: https://github.com/cometbft/cometbft/issues/81
-[\#94]: https://github.com/cometbft/cometbft/issues/94
+[\#81]: https://github.com/depinnetwork/por-consensus/issues/81
+[\#94]: https://github.com/depinnetwork/por-consensus/issues/94
 [adr-057]: ./tendermint-core/adr-057-RPC.md
 [tendermint/tendermint\#7121]: https://github.com/tendermint/tendermint/pull/7121
 [tendermint/tendermint\#9683]: https://github.com/tendermint/tendermint/pull/9683
-[adr-101]: https://github.com/cometbft/cometbft/pull/82
-[adr-101-poc]: https://github.com/cometbft/cometbft/issues/816
+[adr-101]: https://github.com/depinnetwork/por-consensus/pull/82
+[adr-101-poc]: https://github.com/depinnetwork/por-consensus/issues/816
 [adr-102]: adr-102-rpc-companion.md
 [adr-103]: ./adr-103-proto-versioning.md
 [adr-075]: ./tendermint-core/adr-075-rpc-subscription.md

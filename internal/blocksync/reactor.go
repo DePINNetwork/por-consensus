@@ -6,14 +6,14 @@ import (
 	"sync"
 	"time"
 
-	bcproto "github.com/cometbft/cometbft/api/cometbft/blocksync/v2"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	tcpconn "github.com/cometbft/cometbft/p2p/transport/tcp/conn"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
+	bcproto "github.com/depinnetwork/por-consensus/api/cometbft/blocksync/v2"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/p2p"
+	tcpconn "github.com/depinnetwork/por-consensus/p2p/transport/tcp/conn"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/store"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

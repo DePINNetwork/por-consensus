@@ -356,7 +356,7 @@ considered for backporting to the `v0.38.x-experimental` branch.
   implement their own gossip mechanism (until an interface such as [\#1112] is
   available).
 
-[\#1112]: https://github.com/cometbft/cometbft/discussions/1112
-[\#1117]: https://github.com/cometbft/cometbft/issues/1117
+[\#1112]: https://github.com/depinnetwork/por-consensus/discussions/1112
+[\#1117]: https://github.com/depinnetwork/por-consensus/issues/1117
 [`Mempool`]: ../../../mempool/mempool.go
 [RFC 011]: ../rfc/tendermint-core/rfc-011-delete-gas.md

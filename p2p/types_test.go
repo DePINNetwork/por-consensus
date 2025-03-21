@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/require"
 
-	p2pproto "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
+	p2pproto "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
 )
 
 func TestEnvelopeMarshalMessage(t *testing.T) {

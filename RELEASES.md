@@ -67,15 +67,15 @@ the 2.x line.
    The following links are to always point to `main`, regardless of where they
    occur in the codebase:
 
-   * `https://github.com/cometbft/cometbft/blob/main/LICENSE`
+   * `https://github.com/depinnetwork/por-consensus/blob/main/LICENSE`
 
    Be sure to search for all of the following links and replace `main` with your
    corresponding branch label or version (e.g. `v2.x` or `v2.0`):
 
-   * `github.com/cometbft/cometbft/blob/main` ->
-     `github.com/cometbft/cometbft/blob/v2.x`
-   * `github.com/cometbft/cometbft/tree/main` ->
-     `github.com/cometbft/cometbft/tree/v2.x`
+   * `github.com/depinnetwork/por-consensus/blob/main` ->
+     `github.com/depinnetwork/por-consensus/blob/v2.x`
+   * `github.com/depinnetwork/por-consensus/tree/main` ->
+     `github.com/depinnetwork/por-consensus/tree/v2.x`
    * `docs.cometbft.com/main` -> `docs.cometbft.com/v2`
 
    Once you have updated all of the relevant documentation:
@@ -94,9 +94,9 @@ the 2.x line.
    been updated from `main` to the backport branch version.
 
 6. Prepare the [CometBFT documentation
-   repository](https://github.com/cometbft/cometbft-docs) to build the release
+   repository](https://github.com/depinnetwork/por-consensus-docs) to build the release
    branch's version by updating the
-   [VERSIONS](https://github.com/cometbft/cometbft-docs/blob/main/VERSIONS)
+   [VERSIONS](https://github.com/depinnetwork/por-consensus-docs/blob/main/VERSIONS)
    file.
 
 After doing these steps, go back to `main` and do the following:
@@ -106,7 +106,7 @@ After doing these steps, go back to `main` and do the following:
 
 2. Add a new section to the Mergify config (`.github/mergify.yml`) to enable the
    backport bot to work on this branch, and add a corresponding `backport-to-v2.x`
-   [label](https://github.com/cometbft/cometbft/labels) so the bot can be triggered.
+   [label](https://github.com/depinnetwork/por-consensus/labels) so the bot can be triggered.
 
 3. Add a new section to the Dependabot config (`.github/dependabot.yml`) to
    enable automatic update of Go dependencies on this branch. Copy and edit one
@@ -115,7 +115,7 @@ After doing these steps, go back to `main` and do the following:
 4. Remove all changelog entries from `.changelog/unreleased` that are destined
    for release from the backport branch.
 
-[e2e]: https://github.com/cometbft/cometbft/blob/main/.github/workflows/e2e-nightly-main.yml
+[e2e]: https://github.com/depinnetwork/por-consensus/blob/main/.github/workflows/e2e-nightly-main.yml
 
 ## Pre-releases
 
@@ -156,7 +156,7 @@ backport branch (see above). Otherwise:
 
 1. Start from the backport branch (e.g. `v2.x`).
 2. Run the E2E nightlies (which can be triggered from the GitHub UI; e.g.,
-   <https://github.com/cometbft/cometbft/actions/workflows/e2e-manual.yml>).
+   <https://github.com/depinnetwork/por-consensus/actions/workflows/e2e-manual.yml>).
 3. Prepare the pre-release documentation:
    * Build the changelog with [unclog] _without_ doing an unclog release (`unclog build -a > CHANGELOG.md`), and
      commit the built changelog. This ensures that all changelog entries appear
@@ -165,8 +165,8 @@ backport branch (see above). Otherwise:
      release.
    * Ensure that `UPGRADING.md` is up-to-date and includes notes on any breaking
      changes or other upgrading flows.
-4. Check the dependency to `github.com/cometbft/cometbft/api` in the `go.mod`
-   file. If it does not point to an official api version, run `go get github.com/cometbft/cometbft/api`
+4. Check the dependency to `github.com/depinnetwork/por-consensus/api` in the `go.mod`
+   file. If it does not point to an official api version, run `go get github.com/depinnetwork/por-consensus/api`
    and `go mod tidy` (to update `go.sum`) so that it points to one. You may need to tag a new version of the api
    if the last version is too old (i.e., it does not contain the latest
    changes to the protos). If that is the case:
@@ -202,10 +202,10 @@ Before performing these steps, be sure the
 
 1. Start on the backport branch (e.g. `v2.x`)
 2. Run the E2E nightlies (which can be triggered from the GitHub UI; e.g.,
-   <https://github.com/cometbft/cometbft/actions/workflows/e2e-manual.yml>).
+   <https://github.com/depinnetwork/por-consensus/actions/workflows/e2e-manual.yml>).
 3. Prepare the release:
-   * Check the dependency to `github.com/cometbft/cometbft/api` in the `go.mod`
-     file. If it does not point to an official api version, run `go get github.com/cometbft/cometbft/api`
+   * Check the dependency to `github.com/depinnetwork/por-consensus/api` in the `go.mod`
+     file. If it does not point to an official api version, run `go get github.com/depinnetwork/por-consensus/api`
      and `go mod tidy` (to update `go.sum`) so that it points to one. You may need to tag a new version of the api
      if the last released version is too old (i.e., it does not contain the latest
      changes to the protos). If that is the case:
@@ -245,10 +245,10 @@ To create a patch release:
 
 1. Checkout the long-lived backport branch: `git checkout v2.x`
 2. Run the E2E nightlies (which can be triggered from the GitHub UI; e.g.,
-   <https://github.com/cometbft/cometbft/actions/workflows/e2e-manual.yml>).
+   <https://github.com/depinnetwork/por-consensus/actions/workflows/e2e-manual.yml>).
 3. Check out a new branch and prepare the release:
-   * Check the dependency to `github.com/cometbft/cometbft/api` in the `go.mod`
-     file. If it does not point to an official api version, run `go get github.com/cometbft/cometbft/api`
+   * Check the dependency to `github.com/depinnetwork/por-consensus/api` in the `go.mod`
+     file. If it does not point to an official api version, run `go get github.com/depinnetwork/por-consensus/api`
      and `go mod tidy` (to update `go.sum`) so that it points to one. You may need to tag a new version of the api
      if the last released version is too old (i.e., it does not contain the latest
      changes to the protos). If that is the case:
@@ -281,7 +281,7 @@ After the release of `v1.0.0`, the backport branch is named `v1.x`. Any future m
 from the `v1.x` branch. There won't be a separate backport branch for minor releases, so there won't be a `v1.1.x` backport branch.
 
 For more details about versioning guarantees after the `v1.0.0` release, please check
-the [versioning](https://github.com/cometbft/cometbft/blob/main/UPGRADING.md#versioning) section in the `UPGRADING.md` document.
+the [versioning](https://github.com/depinnetwork/por-consensus/blob/main/UPGRADING.md#versioning) section in the `UPGRADING.md` document.
 
 ## Major Release Checklist
 
@@ -318,7 +318,7 @@ operators.
 ### Nightly End-To-End Tests
 
 The CometBFT team maintains [a set of end-to-end
-tests](https://github.com/cometbft/cometbft/blob/main/test/e2e/README.md#L1)
+tests](https://github.com/depinnetwork/por-consensus/blob/main/test/e2e/README.md#L1)
 that run each night on the latest commit of the project and on the code in the
 tip of each supported backport branch. These tests start a network of
 containerized CometBFT processes and run automated checks that the network

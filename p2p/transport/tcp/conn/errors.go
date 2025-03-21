@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cometbft/cometbft/p2p/transport"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
 )
 
 var (

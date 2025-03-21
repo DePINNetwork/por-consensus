@@ -9,11 +9,11 @@ import (
 	"slices"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	cmtbytes "github.com/depinnetwork/por-consensus/libs/bytes"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
 )
 
 const (

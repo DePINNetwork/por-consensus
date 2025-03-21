@@ -318,11 +318,11 @@ We leave this as future work.
 * [Issue #1035][1035]
 * Going further in removing `valid(v)` check: [first comment][valid-further1], [second comment][valid-further2]
 
-[abci-spec]: https://github.com/cometbft/cometbft/blob/main/spec/abci/abci++_app_requirements.md#formal-requirements
+[abci-spec]: https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci++_app_requirements.md#formal-requirements
 [arxiv]: https://arxiv.org/abs/1807.04938
-[1171]: https://github.com/cometbft/cometbft/issues/1171
-[1174]: https://github.com/cometbft/cometbft/issues/1174
-[1230]: https://github.com/cometbft/cometbft/issues/1230
-[1035]: https://github.com/cometbft/cometbft/issues/1035
-[valid-further1]: https://github.com/cometbft/cometbft/issues/1230#issuecomment-1671233308
-[valid-further2]: https://github.com/cometbft/cometbft/pull/1391#pullrequestreview-1641521760
+[1171]: https://github.com/depinnetwork/por-consensus/issues/1171
+[1174]: https://github.com/depinnetwork/por-consensus/issues/1174
+[1230]: https://github.com/depinnetwork/por-consensus/issues/1230
+[1035]: https://github.com/depinnetwork/por-consensus/issues/1035
+[valid-further1]: https://github.com/depinnetwork/por-consensus/issues/1230#issuecomment-1671233308
+[valid-further2]: https://github.com/depinnetwork/por-consensus/pull/1391#pullrequestreview-1641521760

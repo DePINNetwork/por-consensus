@@ -6,8 +6,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/cometbft/cometbft/light/provider"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // The detector component of the light client detects and handles attacks on the light client.

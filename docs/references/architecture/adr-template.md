@@ -15,8 +15,8 @@
 >
 >     Accepted
 >
->     [Tracking issue](https://github.com/cometbft/cometbft/issues/123)
->     [Milestone](https://github.com/cometbft/cometbft/milestones/123)
+>     [Tracking issue](https://github.com/depinnetwork/por-consensus/issues/123)
+>     [Milestone](https://github.com/depinnetwork/por-consensus/milestones/123)
 >     [Project board](https://github.com/orgs/cometbft/projects/123)
 >
 > Rejected ADRs are captured as a record of recommendations that we specifically

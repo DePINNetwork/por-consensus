@@ -45,13 +45,13 @@ Complete documentation can be found on the
 
 Please do not depend on `main` as your production branch, as it may receive
 significant breaking changes at any time. Use
-[releases](https://github.com/cometbft/cometbft/releases) instead.
+[releases](https://github.com/depinnetwork/por-consensus/releases) instead.
 
 If you intend to run CometBFT in production, we're happy to help. To contact us,
 in order of preference:
 
 - [Create a new discussion on
-  GitHub](https://github.com/cometbft/cometbft/discussions)
+  GitHub](https://github.com/depinnetwork/por-consensus/discussions)
 - Reach out to us via [Telegram](https://t.me/CometBFT)
 - [Join the Cosmos Network Discord](https://discord.gg/interchain) and
   discuss in
@@ -65,7 +65,7 @@ CometBFT aligns with other components of the [Interchain Stack](https://intercha
 and we offer long-term support (LTS) guarantees for certain releases. The
 complete End of Life (EOL) schedule, LTS plans, and the general support policy is
 in documented and regularly updated in the
-discussion [Support policy for CometBFT releases #590](https://github.com/cometbft/cometbft/discussions/590).
+discussion [Support policy for CometBFT releases #590](https://github.com/depinnetwork/por-consensus/discussions/590).
 
 ## Security
 
@@ -178,35 +178,35 @@ Foundation](https://interchain.io), a Swiss non-profit.
 [optimistic-responsive]: https://informal.systems/blog/tendermint-responsiveness
 [Blockchain]: https://en.wikipedia.org/wiki/Blockchain
 [version-badge]: https://img.shields.io/github/v/release/cometbft/cometbft.svg
-[version-url]: https://github.com/cometbft/cometbft/releases/latest
-[api-badge]: https://pkg.go.dev/badge/github.com/cometbft/cometbft.svg
-[api-url]: https://pkg.go.dev/github.com/cometbft/cometbft
+[version-url]: https://github.com/depinnetwork/por-consensus/releases/latest
+[api-badge]: https://pkg.go.dev/badge/github.com/depinnetwork/por-consensus.svg
+[api-url]: https://pkg.go.dev/github.com/depinnetwork/por-consensus
 [go-badge]: https://img.shields.io/badge/go-1.21-blue.svg
 [go-url]: https://github.com/moovweb/gvm
 [discord-badge]: https://img.shields.io/discord/669268347736686612.svg
 [discord-url]: https://discord.gg/interchain
 [license-badge]: https://img.shields.io/github/license/cometbft/cometbft.svg
-[license-url]: https://github.com/cometbft/cometbft/blob/main/LICENSE
-[sg-badge]: https://sourcegraph.com/github.com/cometbft/cometbft/-/badge.svg
-[sg-url]: https://sourcegraph.com/github.com/cometbft/cometbft?badge
-[tests-url]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml
-[tests-url-v1x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml?query=branch%3Av1.x
-[tests-url-v038x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml?query=branch%3Av0.38.x
-[tests-url-v037x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml?query=branch%3Av0.37.x
-[tests-url-v034x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml?query=branch%3Av0.34.x
-[tests-badge]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml/badge.svg?branch=main
-[tests-badge-v1x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml/badge.svg?branch=v1.x
-[tests-badge-v038x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml/badge.svg?branch=v0.38.x
-[tests-badge-v037x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml/badge.svg?branch=v0.37.x
-[tests-badge-v034x]: https://github.com/cometbft/cometbft/actions/workflows/tests.yml/badge.svg?branch=v0.34.x
-[lint-badge]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml/badge.svg?branch=main
-[lint-badge-v034x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml/badge.svg?branch=v0.34.x
-[lint-badge-v037x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml/badge.svg?branch=v0.37.x
-[lint-badge-v038x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml/badge.svg?branch=v0.38.x
-[lint-badge-v1x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml/badge.svg?branch=v1.x
-[lint-url]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml
-[lint-url-v038x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml?query=branch%3Av0.38.x
-[lint-url-v1x]: https://github.com/cometbft/cometbft/actions/workflows/lint.yml?query=branch%3Av1.x
+[license-url]: https://github.com/depinnetwork/por-consensus/blob/main/LICENSE
+[sg-badge]: https://sourcegraph.com/github.com/depinnetwork/por-consensus/-/badge.svg
+[sg-url]: https://sourcegraph.com/github.com/depinnetwork/por-consensus?badge
+[tests-url]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml
+[tests-url-v1x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml?query=branch%3Av1.x
+[tests-url-v038x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml?query=branch%3Av0.38.x
+[tests-url-v037x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml?query=branch%3Av0.37.x
+[tests-url-v034x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml?query=branch%3Av0.34.x
+[tests-badge]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml/badge.svg?branch=main
+[tests-badge-v1x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml/badge.svg?branch=v1.x
+[tests-badge-v038x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml/badge.svg?branch=v0.38.x
+[tests-badge-v037x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml/badge.svg?branch=v0.37.x
+[tests-badge-v034x]: https://github.com/depinnetwork/por-consensus/actions/workflows/tests.yml/badge.svg?branch=v0.34.x
+[lint-badge]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml/badge.svg?branch=main
+[lint-badge-v034x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml/badge.svg?branch=v0.34.x
+[lint-badge-v037x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml/badge.svg?branch=v0.37.x
+[lint-badge-v038x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml/badge.svg?branch=v0.38.x
+[lint-badge-v1x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml/badge.svg?branch=v1.x
+[lint-url]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml
+[lint-url-v038x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml?query=branch%3Av0.38.x
+[lint-url-v1x]: https://github.com/depinnetwork/por-consensus/actions/workflows/lint.yml?query=branch%3Av1.x
 [tm-core]: https://github.com/tendermint/tendermint
 [pbts]: https://docs.cometbft.com/v1.0/explanation/core/proposer-based-timestamps
 [abci-v2]: https://docs.cometbft.com/v1.0/spec/abci/

@@ -36,7 +36,7 @@ The existing alternative approaches for transaction gossiping are:
 
 ### FLOOD - the current transaction gossiping protocol in CometBFT
 
-[Flood](https://github.com/cometbft/cometbft/blob/main/spec/mempool/gossip/flood.md) is the protocol currently used by CometBFT to gossip transactions. If a transaction
+[Flood](https://github.com/depinnetwork/por-consensus/blob/main/spec/mempool/gossip/flood.md) is the protocol currently used by CometBFT to gossip transactions. If a transaction
 was received via RPC, it is gossiped to all connected peers. Transactions received from other peers
 are forwarded to all the peers which have not already sent this particular transaction.
 
@@ -56,7 +56,7 @@ Efforts to port the CAT mempool to CometBFT were documented in [\#2027]. Experim
 
 ### Limiting the number of peers a transaction is forwarded to
 
-CometBFT allows operators to configure `p2p.experimental_max_gossip_connections_to_non_persistent_peers` and `p2p.experimental_max_gossip_connections_to_persistent_peers`  as a maximum number of peers to send  transactions to ([#1558](https://github.com/cometbft/cometbft/pull/1558) and [#1584](https://github.com/cometbft/cometbft/pull/1584)). 
+CometBFT allows operators to configure `p2p.experimental_max_gossip_connections_to_non_persistent_peers` and `p2p.experimental_max_gossip_connections_to_persistent_peers`  as a maximum number of peers to send  transactions to ([#1558](https://github.com/depinnetwork/por-consensus/pull/1558) and [#1584](https://github.com/depinnetwork/por-consensus/pull/1584)). 
 This reduces bandwidth compared to when they are disabled, but there is no rule to determine which peers transactions
 are not forwarded to. DOG can be considered an enhanced, more informed version of this protocol.
 
@@ -83,7 +83,7 @@ via a new config flag `mempool.dog_protocol_enabled`. It will be enabled by defa
 
 ## Detailed Design
 
-We start the design section with a general description of how the algorithm works. The protocol is explained in detail in the accompanying [specification](https://github.com/cometbft/cometbft/blob/main/spec/mempool/gossip/dog.md). 
+We start the design section with a general description of how the algorithm works. The protocol is explained in detail in the accompanying [specification](https://github.com/depinnetwork/por-consensus/blob/main/spec/mempool/gossip/dog.md). 
 
 CometBFT nodes cache received transactions and store the IDs of all the peers that have sent it in a `senders` list. 
 
@@ -279,7 +279,7 @@ The only reason for this is the incompatibility of DOG with the existing experim
 that disables sending transactions to all peers. 
 
 
-The [specification](https://github.com/cometbft/cometbft/spec/mempool/gossip/dog.md) of the protocol introduces 3 additional variables. 
+The [specification](https://github.com/depinnetwork/por-consensus/spec/mempool/gossip/dog.md) of the protocol introduces 3 additional variables. 
 Out of the tree, we have made the following configuration parameters:
  
 - `mempool.dog_adjust_interval: time.Duration`: Set to `1s` by default. Indicates how often the redundancy controller readjusts 
@@ -357,14 +357,14 @@ to behave correctly. It should however not be used in combination with the param
 ## References
 
 
-[\#4320]: https://github.com/cometbft/cometbft/issues/4320
-[\#3297]: https://github.com/cometbft/cometbft/issues/3297
-[\#1472]: https://github.com/cometbft/cometbft/pull/1472
-[\#2027]: https://github.com/cometbft/cometbft/issues/2027
-[\#4569]: https://github.com/cometbft/cometbft/issues/4596
-[\#4598]: https://github.com/cometbft/cometbft/issues/4598
-[\#4597]: https://github.com/cometbft/cometbft/issues/4597
+[\#4320]: https://github.com/depinnetwork/por-consensus/issues/4320
+[\#3297]: https://github.com/depinnetwork/por-consensus/issues/3297
+[\#1472]: https://github.com/depinnetwork/por-consensus/pull/1472
+[\#2027]: https://github.com/depinnetwork/por-consensus/issues/2027
+[\#4569]: https://github.com/depinnetwork/por-consensus/issues/4596
+[\#4598]: https://github.com/depinnetwork/por-consensus/issues/4598
+[\#4597]: https://github.com/depinnetwork/por-consensus/issues/4597
 
-* [FLOOD](https://github.com/cometbft/cometbft/blob/main/spec/mempool/gossip/flood.md)
-* [DOG Specification](https://github.com/cometbft/cometbft/blob/main/spec/mempool/gossip/dog.md). 
+* [FLOOD](https://github.com/depinnetwork/por-consensus/blob/main/spec/mempool/gossip/flood.md)
+* [DOG Specification](https://github.com/depinnetwork/por-consensus/blob/main/spec/mempool/gossip/dog.md). 
 

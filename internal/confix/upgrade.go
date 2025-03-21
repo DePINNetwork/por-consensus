@@ -12,7 +12,7 @@ import (
 	"github.com/creachadair/tomledit/transform"
 	"github.com/spf13/viper"
 
-	"github.com/cometbft/cometbft/config"
+	"github.com/depinnetwork/por-consensus/config"
 )
 
 // Upgrade reads the configuration file at configPath and applies any

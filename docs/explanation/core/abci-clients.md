@@ -81,8 +81,8 @@ Here's an example of how to create an `UnsyncLocalClient`:
 
 ```go
 import (
-    abcicli "github.com/cometbft/cometbft/abci/client"
-    "github.com/cometbft/cometbft/abci/types"
+    abcicli "github.com/depinnetwork/por-consensus/abci/client"
+    "github.com/depinnetwork/por-consensus/abci/types"
 )
 
 // Create your ABCI application

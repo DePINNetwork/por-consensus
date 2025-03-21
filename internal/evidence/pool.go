@@ -11,13 +11,13 @@ import (
 	gogotypes "github.com/cosmos/gogoproto/types"
 	"github.com/google/orderedcode"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/internal/clist"
-	"github.com/cometbft/cometbft/libs/log"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
-	cmterrors "github.com/cometbft/cometbft/types/errors"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/internal/clist"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/types"
+	cmterrors "github.com/depinnetwork/por-consensus/types/errors"
 )
 
 // Pool maintains a pool of valid evidence to be broadcasted and committed.

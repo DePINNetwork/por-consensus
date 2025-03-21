@@ -5,11 +5,11 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	ni "github.com/cometbft/cometbft/p2p/internal/nodeinfo"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
-	"github.com/cometbft/cometbft/p2p/transport"
-	"github.com/cometbft/cometbft/types"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	ni "github.com/depinnetwork/por-consensus/p2p/internal/nodeinfo"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
+	"github.com/depinnetwork/por-consensus/p2p/transport"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 type (

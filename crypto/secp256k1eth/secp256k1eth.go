@@ -13,8 +13,8 @@ import (
 	secp256k1 "github.com/decred/dcrd/dcrec/secp256k1/v4"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cometbft/cometbft/crypto"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
+	"github.com/depinnetwork/por-consensus/crypto"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
 )
 
 // -------------------------------------.

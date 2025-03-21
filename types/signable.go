@@ -1,10 +1,10 @@
 package types
 
 import (
-	"github.com/cometbft/cometbft/crypto/bls12381"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/secp256k1eth"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1eth"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
 )
 
 // MaxSignatureSize is a maximum allowed signature size for the Proposal

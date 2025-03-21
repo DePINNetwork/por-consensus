@@ -6,8 +6,8 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	pb "github.com/cometbft/cometbft/api/cometbft/abci/v2"
-	"github.com/cometbft/cometbft/libs/protoio"
+	pb "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
+	"github.com/depinnetwork/por-consensus/libs/protoio"
 )
 
 const (

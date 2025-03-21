@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	tmp2p "github.com/cometbft/cometbft/api/cometbft/p2p/v1"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
+	tmp2p "github.com/depinnetwork/por-consensus/api/cometbft/p2p/v1"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
 )
 
 // Empty defines the string representation of an empty NetAddress.

@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 func TestTxFilter(t *testing.T) {

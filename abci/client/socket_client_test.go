@@ -11,11 +11,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	"github.com/cometbft/cometbft/abci/server"
-	"github.com/cometbft/cometbft/abci/types"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/service"
+	abcicli "github.com/depinnetwork/por-consensus/abci/client"
+	"github.com/depinnetwork/por-consensus/abci/server"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/service"
 )
 
 func TestCalls(t *testing.T) {

@@ -1,2 +1,2 @@
 - `[rpc]` Support setting proxy from env to `DefaultHttpClient`.
-  ([\#1900](https://github.com/cometbft/cometbft/pull/1900))
+  ([\#1900](https://github.com/depinnetwork/por-consensus/pull/1900))

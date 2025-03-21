@@ -40,7 +40,7 @@ performed on `v0.38.0-alpha.2` from May 21, 2023, which we use here as a baselin
 There are many changes with respect to the baseline. In particular, new features that can affect
 performance are some improvements to bandwidth consumption and proposer-based timestamps (PBTS). For
 the full list of changes, check out the
-[CHANGELOG](https://github.com/cometbft/cometbft/blob/v1.0.0-alpha.2/CHANGELOG.md).
+[CHANGELOG](https://github.com/depinnetwork/por-consensus/blob/v1.0.0-alpha.2/CHANGELOG.md).
 
 The primary objective of the QA process is to ensure that no significant regressions have occurred
 compared to the previous version. We consider that a regression is present if there is a variance
@@ -418,9 +418,9 @@ from the end of a cycle to the beginning of the next one.
 
 If we focus on the _width_ of periods when ephemeral nodes are blocksynching, we see that they are slightly narrower
 in `v1.0.0`. This is likely due to the improvements introduced as part of the issues
-[#1283](https://github.com/cometbft/cometbft/issues/1283),
-[#2379](https://github.com/cometbft/cometbft/issues/2379), and
-[#2465](https://github.com/cometbft/cometbft/issues/2465).
+[#1283](https://github.com/depinnetwork/por-consensus/issues/1283),
+[#2379](https://github.com/depinnetwork/por-consensus/issues/2379), and
+[#2465](https://github.com/depinnetwork/por-consensus/issues/2465).
 
 The following plots show the transactions processed per minute.
 
@@ -469,9 +469,9 @@ In both cases, it is contained under 5 most of the time, which is considered nor
 | Rotating | 2024-04-03 | v1.0.0-alpha.2 (e42f62b681a2d0b05607a61d834afea90f73d366) | Pass   |
 
 [qa]: README.md#cometbft-quality-assurance
-[aws-latencies]: https://github.com/cometbft/cometbft/blob/v1.0.0-alpha.2/test/e2e/pkg/latency/aws-latencies.csv
-[latency-emulator-script]: https://github.com/cometbft/cometbft/blob/v1.0.0-alpha.2/test/e2e/pkg/latency/latency-setter.py 
+[aws-latencies]: https://github.com/depinnetwork/por-consensus/blob/v1.0.0-alpha.2/test/e2e/pkg/latency/aws-latencies.csv
+[latency-emulator-script]: https://github.com/depinnetwork/por-consensus/blob/v1.0.0-alpha.2/test/e2e/pkg/latency/latency-setter.py 
 [bft-time]: ../../../spec/consensus/bft-time.md
 [pbts]: ../../../spec/consensus/proposer-based-timestamp/README.md
-[\#486]: https://github.com/cometbft/cometbft/issues/486
-[end-to-end]: https://github.com/cometbft/cometbft/tree/main/test/e2e
+[\#486]: https://github.com/depinnetwork/por-consensus/issues/486
+[end-to-end]: https://github.com/depinnetwork/por-consensus/tree/main/test/e2e

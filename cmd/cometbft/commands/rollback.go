@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/os"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/store"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/os"
+	"github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/store"
 )
 
 var removeBlock = false

@@ -1,1 +1,1 @@
-- `[privval]` Retry accepting a connection ([\#2047](https://github.com/cometbft/cometbft/pull/2047))
+- `[privval]` Retry accepting a connection ([\#2047](https://github.com/depinnetwork/por-consensus/pull/2047))

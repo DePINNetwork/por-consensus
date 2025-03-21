@@ -5,11 +5,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtnet "github.com/cometbft/cometbft/internal/net"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/privval"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	cmtnet "github.com/depinnetwork/por-consensus/internal/net"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/privval"
 )
 
 func main() {

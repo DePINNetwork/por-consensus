@@ -3,13 +3,13 @@ package consensus
 import (
 	"context"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/internal/clist"
-	mempl "github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/proxy"
-	"github.com/cometbft/cometbft/types"
+	abcicli "github.com/depinnetwork/por-consensus/abci/client"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/internal/clist"
+	mempl "github.com/depinnetwork/por-consensus/mempool"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/proxy"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // -----------------------------------------------------------------------------

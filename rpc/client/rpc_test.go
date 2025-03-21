@@ -14,17 +14,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/rpc/client"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	rpclocal "github.com/cometbft/cometbft/rpc/client/local"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpcclient "github.com/cometbft/cometbft/rpc/jsonrpc/client"
-	rpctest "github.com/cometbft/cometbft/rpc/test"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/rpc/client"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	rpclocal "github.com/depinnetwork/por-consensus/rpc/client/local"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/jsonrpc/client"
+	rpctest "github.com/depinnetwork/por-consensus/rpc/test"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var ctx = context.Background()

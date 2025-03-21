@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cometbft/cometbft/light/provider"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/client"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var (

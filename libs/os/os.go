@@ -12,7 +12,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/log"
 )
 
 type logger interface {

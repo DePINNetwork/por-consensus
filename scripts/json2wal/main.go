@@ -15,9 +15,9 @@ import (
 	"os"
 	"strings"
 
-	cs "github.com/cometbft/cometbft/internal/consensus"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/types"
+	cs "github.com/depinnetwork/por-consensus/internal/consensus"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 func main() {

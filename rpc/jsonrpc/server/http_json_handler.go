@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/rpc/jsonrpc/types"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
 )
 
 // HTTP + JSON handler

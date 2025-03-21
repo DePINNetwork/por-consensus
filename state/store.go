@@ -10,15 +10,15 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/google/orderedcode"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtstate "github.com/cometbft/cometbft/api/cometbft/state/v2"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cmtdb "github.com/cometbft/cometbft/db"
-	cmtos "github.com/cometbft/cometbft/internal/os"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/libs/metrics"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtstate "github.com/depinnetwork/por-consensus/api/cometbft/state/v2"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	cmtos "github.com/depinnetwork/por-consensus/internal/os"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
+	"github.com/depinnetwork/por-consensus/libs/metrics"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

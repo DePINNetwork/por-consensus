@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/libs/pubsub/query/syntax"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/libs/pubsub"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query"
+	"github.com/depinnetwork/por-consensus/libs/pubsub/query/syntax"
 )
 
 var _ pubsub.Query = (*query.Query)(nil)

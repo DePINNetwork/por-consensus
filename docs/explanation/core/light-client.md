@@ -9,14 +9,14 @@ applications. CometBFT provides unique speed and security properties for
 light client applications.
 
 See our [light
-package](https://pkg.go.dev/github.com/cometbft/cometbft/light?tab=doc).
+package](https://pkg.go.dev/github.com/depinnetwork/por-consensus/light?tab=doc).
 
 ## Overview
 
 The objective of the light client protocol is to get a commit for a recent
 block hash where the commit includes a majority of signatures from the last
 known validator set. From there, all the application state is verifiable with
-[merkle proofs](https://github.com/cometbft/cometbft/blob/main/spec/core/encoding.md#iavl-tree).
+[merkle proofs](https://github.com/depinnetwork/por-consensus/blob/main/spec/core/encoding.md#iavl-tree).
 
 ## Properties
 
@@ -32,7 +32,7 @@ known validator set. From there, all the application state is verifiable with
 
 ## Where to obtain trusted height & hash
 
-[Trust Options](https://pkg.go.dev/github.com/cometbft/cometbft/light?tab=doc#TrustOptions)
+[Trust Options](https://pkg.go.dev/github.com/depinnetwork/por-consensus/light?tab=doc#TrustOptions)
 
 One way to obtain semi-trusted hash & height is to query multiple full nodes
 and compare their hashes:

@@ -3,8 +3,8 @@
 package p2p
 
 import (
-	"github.com/cometbft/cometbft/libs/metrics/discard"
-	prometheus "github.com/cometbft/cometbft/libs/metrics/prometheus"
+	"github.com/depinnetwork/por-consensus/libs/metrics/discard"
+	prometheus "github.com/depinnetwork/por-consensus/libs/metrics/prometheus"
 	stdprometheus "github.com/prometheus/client_golang/prometheus"
 )
 

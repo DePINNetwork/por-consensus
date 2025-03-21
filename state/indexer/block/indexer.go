@@ -4,15 +4,15 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cometbft/cometbft/config"
-	cmtdb "github.com/cometbft/cometbft/db"
-	"github.com/cometbft/cometbft/state/indexer"
-	blockidxkv "github.com/cometbft/cometbft/state/indexer/block/kv"
-	blockidxnull "github.com/cometbft/cometbft/state/indexer/block/null"
-	"github.com/cometbft/cometbft/state/indexer/sink/psql"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/state/txindex/kv"
-	"github.com/cometbft/cometbft/state/txindex/null"
+	"github.com/depinnetwork/por-consensus/config"
+	cmtdb "github.com/depinnetwork/por-consensus/db"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	blockidxkv "github.com/depinnetwork/por-consensus/state/indexer/block/kv"
+	blockidxnull "github.com/depinnetwork/por-consensus/state/indexer/block/null"
+	"github.com/depinnetwork/por-consensus/state/indexer/sink/psql"
+	"github.com/depinnetwork/por-consensus/state/txindex"
+	"github.com/depinnetwork/por-consensus/state/txindex/kv"
+	"github.com/depinnetwork/por-consensus/state/txindex/null"
 )
 
 // IndexerFromConfig constructs a slice of indexer.EventSink using the provided

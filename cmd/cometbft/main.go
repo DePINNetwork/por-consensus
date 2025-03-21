@@ -4,12 +4,12 @@ import (
 	"os"
 	"path/filepath"
 
-	cmd "github.com/cometbft/cometbft/cmd/cometbft/commands"
-	"github.com/cometbft/cometbft/cmd/cometbft/commands/config"
-	"github.com/cometbft/cometbft/cmd/cometbft/commands/debug"
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/cli"
-	nm "github.com/cometbft/cometbft/node"
+	cmd "github.com/depinnetwork/por-consensus/cmd/cometbft/commands"
+	"github.com/depinnetwork/por-consensus/cmd/cometbft/commands/config"
+	"github.com/depinnetwork/por-consensus/cmd/cometbft/commands/debug"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/libs/cli"
+	nm "github.com/depinnetwork/por-consensus/node"
 )
 
 func main() {

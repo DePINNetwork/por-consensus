@@ -2,4 +2,4 @@
   to gain more control on the max size of transactions in a block.
   It also allows the application to have visibility on all transactions in the
   mempool at `PrepareProposal` time.
-  ([\#980](https://github.com/cometbft/cometbft/pull/980))
+  ([\#980](https://github.com/depinnetwork/por-consensus/pull/980))

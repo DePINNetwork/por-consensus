@@ -391,7 +391,7 @@ laddr = "tcp://127.0.0.1:26657"
 The RPC server endpoints have OpenAPI specification definitions through [Swagger UI](../../rpc).
 <!---
 NOTE: The OpenAPI reference (../../rpc) is injected into the documentation during
-the CometBFT docs build process. See https://github.com/cometbft/cometbft-docs/
+the CometBFT docs build process. See https://github.com/depinnetwork/por-consensus-docs/
 for details.
 --->
 
@@ -863,7 +863,7 @@ persistent_peers = ""
 The node will attempt to establish connections to all configured persistent peers.
 This in particular means that persistent peers do not count towards
 the configured [`p2p.max_num_outbound_peers`](#p2pmax_num_outbound_peers)
-(refer to [issue 1304](https://github.com/cometbft/cometbft/issues/1304) for more details).
+(refer to [issue 1304](https://github.com/depinnetwork/por-consensus/issues/1304) for more details).
 Moreover, if a connection to a persistent peer is lost, the node will attempt
 reconnecting to that peer.
 
@@ -996,7 +996,7 @@ the node will attempt to establish connections to potential peers.
 This configuration only has effect if the [PEX reactor](#p2ppex) is enabled.
 Nodes configured as [persistent peers](#p2ppersistent_peers) do not count towards the
 configured `p2p.max_num_outbound_peers` limit
-(refer to [issue 1304](https://github.com/cometbft/cometbft/issues/1304) for more details).
+(refer to [issue 1304](https://github.com/depinnetwork/por-consensus/issues/1304) for more details).
 
 The connections are bidirectional, so any connection can send or receive messages, blocks, and other data. The separation into
 inbound and outbound setting only distinguishes the initial setup of the connection: outbound connections are initiated
@@ -1437,7 +1437,7 @@ a redundancy of 0.5 means that, for every two first-time transactions received, 
 receive one duplicate transaction. Zero redundancy is disabled because it could render the node
 isolated from transaction data.
 
-Check out the issue [#4597](https://github.com/cometbft/cometbft/issues/4597) for discussions about
+Check out the issue [#4597](https://github.com/depinnetwork/por-consensus/issues/4597) for discussions about
 possible values.
 
 ### mempool.dog_adjust_interval
@@ -1453,7 +1453,7 @@ Used by the DOG protocol to set how often it will attempt to adjust the redundan
 the value, the longer it will take the node to reduce bandwidth and converge to a stable redundancy
 level. In networks with high latency between nodes (> 500ms), it could be necessary to increase the
 default value, as explained in the
-[spec](https://github.com/cometbft/cometbft/blob/13d852b43068d2e19de0f307d2bc399b30c0ae68/spec/mempool/gossip/dog.md#when-to-adjust).
+[spec](https://github.com/depinnetwork/por-consensus/blob/13d852b43068d2e19de0f307d2bc399b30c0ae68/spec/mempool/gossip/dog.md#when-to-adjust).
 
 ## State synchronization
 State sync rapidly bootstraps a new node by discovering, fetching, and restoring a state machine snapshot from peers
@@ -1758,7 +1758,7 @@ as soon as it gathers all the mandatory +2/3 precommits for a block.
 
 **Notice** that the `timeout_commit` configuration flag is **deprecated** from v1.0.
 It is now up to the application to return a `next_block_delay` value upon
-[`FinalizeBlock`](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci%2B%2B_methods.md#finalizeblock)
+[`FinalizeBlock`](https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci%2B%2B_methods.md#finalizeblock)
 to define how long CometBFT should wait before starting the next height.
 
 ### consensus.double_sign_check_height
@@ -2258,5 +2258,5 @@ inactivity.
 
 **Notice** that the `timeout_commit` configuration flag is **deprecated** from v1.0.
 It is now up to the application to return a `next_block_delay` value upon
-[`FinalizeBlock`](https://github.com/cometbft/cometbft/blob/main/spec/abci/abci%2B%2B_methods.md#finalizeblock)
+[`FinalizeBlock`](https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/abci%2B%2B_methods.md#finalizeblock)
 to define how long CometBFT should wait before starting the next height.

@@ -5,8 +5,8 @@ package v2
 
 import (
 	fmt "fmt"
-	v2 "github.com/cometbft/cometbft/api/cometbft/abci/v2"
-	v21 "github.com/cometbft/cometbft/api/cometbft/types/v2"
+	v2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
+	v21 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"
 	math "math"

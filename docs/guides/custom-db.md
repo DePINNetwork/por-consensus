@@ -15,7 +15,7 @@ Say you have been using `goleveldb` and don't want to switch to `pebbledb`.
 First, you will need to implement [the `DB` interface][db] for `goleveldb`.
 
 NOTE: You can find old implementations of `DB` interface in
-[cometbft-db](https://github.com/cometbft/cometbft-db) repo, which is archived
+[cometbft-db](https://github.com/depinnetwork/por-consensus-db) repo, which is archived
 now.
 
 ```go
@@ -466,8 +466,8 @@ node, err := nm.NewNode(
 
 That's it! CometBFT will now use `goleveldb` as the database.
 
-[db]: https://pkg.go.dev/github.com/cometbft/cometbft-db#DB
-[batch]: https://pkg.go.dev/github.com/cometbft/cometbft-db#Batch
-[iterator]: https://pkg.go.dev/github.com/cometbft/cometbft-db#Iterator
-[db-provider]: https://pkg.go.dev/github.com/cometbft/cometbft@v1.0.1/config#DBProvider
-[new-node]: https://pkg.go.dev/github.com/cometbft/cometbft/node#NewNode
+[db]: https://pkg.go.dev/github.com/depinnetwork/por-consensus-db#DB
+[batch]: https://pkg.go.dev/github.com/depinnetwork/por-consensus-db#Batch
+[iterator]: https://pkg.go.dev/github.com/depinnetwork/por-consensus-db#Iterator
+[db-provider]: https://pkg.go.dev/github.com/depinnetwork/por-consensus@v1.0.1/config#DBProvider
+[new-node]: https://pkg.go.dev/github.com/depinnetwork/por-consensus/node#NewNode

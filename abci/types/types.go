@@ -6,7 +6,7 @@ import (
 
 	"github.com/cosmos/gogoproto/grpc"
 
-	v2 "github.com/cometbft/cometbft/api/cometbft/abci/v2"
+	v2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
 )
 
 type (

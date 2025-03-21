@@ -1,8 +1,8 @@
 package blocksync
 
 import (
-	cmtbs "github.com/cometbft/cometbft/api/cometbft/blocksync/v2"
-	"github.com/cometbft/cometbft/types"
+	cmtbs "github.com/depinnetwork/por-consensus/api/cometbft/blocksync/v2"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 var (

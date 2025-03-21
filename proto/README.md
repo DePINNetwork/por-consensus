@@ -72,14 +72,14 @@ published to a corresponding branch in the `tendermint/tendermint` Buf repositor
 | v0.34.x          | [v0.34.x Protobuf definitions][v034-protos] | [Buf repository v0.34.x branch][v034-buf] |
 
 [protobuf]: https://protobuf.dev/
-[CometBFT]: https://github.com/cometbft/cometbft
-[abci]: https://github.com/cometbft/cometbft/tree/main/spec/abci
+[CometBFT]: https://github.com/depinnetwork/por-consensus
+[abci]: https://github.com/depinnetwork/por-consensus/tree/main/spec/abci
 [buf]: https://buf.build/tendermint/tendermint
 [tmcore]: https://github.com/tendermint/tendermint
-[\#1330]: https://github.com/cometbft/cometbft/issues/1330
-[v034-protos]: https://github.com/cometbft/cometbft/tree/v0.34.x/proto
+[\#1330]: https://github.com/depinnetwork/por-consensus/issues/1330
+[v034-protos]: https://github.com/depinnetwork/por-consensus/tree/v0.34.x/proto
 [v034-buf]: https://buf.build/tendermint/tendermint/docs/v0.34.x
-[v037-protos]: https://github.com/cometbft/cometbft/tree/v0.37.x/proto
+[v037-protos]: https://github.com/depinnetwork/por-consensus/tree/v0.37.x/proto
 [v037-buf]: https://buf.build/tendermint/tendermint/docs/v0.37.x
-[v038-protos]: https://github.com/cometbft/cometbft/tree/v0.38.x/proto
+[v038-protos]: https://github.com/depinnetwork/por-consensus/tree/v0.38.x/proto
 [v038-buf]: https://buf.build/tendermint/tendermint/docs/v0.38.x

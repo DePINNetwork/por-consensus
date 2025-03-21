@@ -3,7 +3,7 @@ package tcp
 import (
 	"net"
 
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
 )
 
 // ConnSet is a lookup table for connections and all their ips.

@@ -150,8 +150,8 @@ See [this comment][spec-comment] for more details.
 
 ## References
 
-* [cometbft/cometbft#2655](https://github.com/cometbft/cometbft/issues/2655)
+* [cometbft/cometbft#2655](https://github.com/depinnetwork/por-consensus/issues/2655)
 * [tendermint/tendermint#5911](https://github.com/tendermint/tendermint/issues/5911)
-* [discussion about timeout params](https://github.com/cometbft/cometbft/discussions/2266)
+* [discussion about timeout params](https://github.com/depinnetwork/por-consensus/discussions/2266)
 
 [spec-comment]: https://github.com/tendermint/tendermint/issues/5911#issuecomment-804889910

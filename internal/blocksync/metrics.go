@@ -1,8 +1,8 @@
 package blocksync
 
 import (
-	"github.com/cometbft/cometbft/libs/metrics"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/libs/metrics"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

@@ -10,7 +10,7 @@
 
 Accepted
 
-[Tracking issue](https://github.com/cometbft/cometbft/issues/707)
+[Tracking issue](https://github.com/depinnetwork/por-consensus/issues/707)
 
 ## Context
 

@@ -1,2 +1,2 @@
 - `[consensus]` Unexpected error conditions in `ApplyBlock` are non-recoverable, so ignoring the error and carrying on is a bug. We replaced a `return` that disregarded the error by a `panic`.
-  ([\#496](https://github.com/cometbft/cometbft/pull/496))
+  ([\#496](https://github.com/depinnetwork/por-consensus/pull/496))

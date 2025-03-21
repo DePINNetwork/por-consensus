@@ -13,12 +13,12 @@ import (
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/object"
 
-	"github.com/cometbft/cometbft/crypto/bls12381"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/secp256k1"
-	"github.com/cometbft/cometbft/crypto/secp256k1eth"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/version"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1eth"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 var (

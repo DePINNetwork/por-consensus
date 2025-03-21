@@ -10,7 +10,7 @@ parent:
 
 This iteration of the QA was run on CometBFT `v0.37.0-alpha3`, the first `v0.37.x` version from the CometBFT repository.
 
-The changes with respect to the baseline, `TM v0.37.x` as of Oct 12, 2022 (Commit: 1cf9d8e276afe8595cba960b51cd056514965fd1), include the rebranding of our fork of Tendermint Core to CometBFT and several improvements, described in the CometBFT [CHANGELOG](https://github.com/cometbft/cometbft/blob/v0.37.0-alpha.3/CHANGELOG.md).
+The changes with respect to the baseline, `TM v0.37.x` as of Oct 12, 2022 (Commit: 1cf9d8e276afe8595cba960b51cd056514965fd1), include the rebranding of our fork of Tendermint Core to CometBFT and several improvements, described in the CometBFT [CHANGELOG](https://github.com/depinnetwork/por-consensus/blob/v0.37.0-alpha.3/CHANGELOG.md).
 
 ## Table of Contents
 - [Testbed](#testbed)

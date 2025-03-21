@@ -73,40 +73,40 @@ during testing:
 
 ```bash
 > go list -json ./... | jq '.Imports, .TestImports, .XTestImports' | grep cometbft | sort | uniq | tr -d '", '
-github.com/cometbft/cometbft/abci/server
-github.com/cometbft/cometbft/abci/types
-github.com/cometbft/cometbft/abci/types
-github.com/cometbft/cometbft/cmd/cometbft/commands
-github.com/cometbft/cometbft/config
-github.com/cometbft/cometbft/crypto
-github.com/cometbft/cometbft/crypto/ed25519
-github.com/cometbft/cometbft/crypto/encoding
-github.com/cometbft/cometbft/crypto/secp256k1
-github.com/cometbft/cometbft/crypto/sr25519
-github.com/cometbft/cometbft/crypto/tmhash
-github.com/cometbft/cometbft/libs/bytes
-github.com/cometbft/cometbft/libs/cli
-github.com/cometbft/cometbft/libs/json
-github.com/cometbft/cometbft/libs/log
-github.com/cometbft/cometbft/mempool
-github.com/cometbft/cometbft/node
-github.com/cometbft/cometbft/p2p
-github.com/cometbft/cometbft/privval
-github.com/cometbft/cometbft/proto/tendermint/crypto
-github.com/cometbft/cometbft/proto/tendermint/p2p
-github.com/cometbft/cometbft/proto/tendermint/types
-github.com/cometbft/cometbft/proto/tendermint/types
-github.com/cometbft/cometbft/proto/tendermint/version
-github.com/cometbft/cometbft/proxy
-github.com/cometbft/cometbft/rpc/client
-github.com/cometbft/cometbft/rpc/client/http
-github.com/cometbft/cometbft/rpc/client/local
-github.com/cometbft/cometbft/rpc/client/mock
-github.com/cometbft/cometbft/rpc/core/types
-github.com/cometbft/cometbft/rpc/jsonrpc/server
-github.com/cometbft/cometbft/types
-github.com/cometbft/cometbft/types/time
-github.com/cometbft/cometbft/version
+github.com/depinnetwork/por-consensus/abci/server
+github.com/depinnetwork/por-consensus/abci/types
+github.com/depinnetwork/por-consensus/abci/types
+github.com/depinnetwork/por-consensus/cmd/cometbft/commands
+github.com/depinnetwork/por-consensus/config
+github.com/depinnetwork/por-consensus/crypto
+github.com/depinnetwork/por-consensus/crypto/ed25519
+github.com/depinnetwork/por-consensus/crypto/encoding
+github.com/depinnetwork/por-consensus/crypto/secp256k1
+github.com/depinnetwork/por-consensus/crypto/sr25519
+github.com/depinnetwork/por-consensus/crypto/tmhash
+github.com/depinnetwork/por-consensus/libs/bytes
+github.com/depinnetwork/por-consensus/libs/cli
+github.com/depinnetwork/por-consensus/libs/json
+github.com/depinnetwork/por-consensus/libs/log
+github.com/depinnetwork/por-consensus/mempool
+github.com/depinnetwork/por-consensus/node
+github.com/depinnetwork/por-consensus/p2p
+github.com/depinnetwork/por-consensus/privval
+github.com/depinnetwork/por-consensus/proto/tendermint/crypto
+github.com/depinnetwork/por-consensus/proto/tendermint/p2p
+github.com/depinnetwork/por-consensus/proto/tendermint/types
+github.com/depinnetwork/por-consensus/proto/tendermint/types
+github.com/depinnetwork/por-consensus/proto/tendermint/version
+github.com/depinnetwork/por-consensus/proxy
+github.com/depinnetwork/por-consensus/rpc/client
+github.com/depinnetwork/por-consensus/rpc/client/http
+github.com/depinnetwork/por-consensus/rpc/client/local
+github.com/depinnetwork/por-consensus/rpc/client/mock
+github.com/depinnetwork/por-consensus/rpc/core/types
+github.com/depinnetwork/por-consensus/rpc/jsonrpc/server
+github.com/depinnetwork/por-consensus/types
+github.com/depinnetwork/por-consensus/types/time
+github.com/depinnetwork/por-consensus/version
 ```
 
 #### Packages used by IBC Go
@@ -116,20 +116,20 @@ while using CometBFT v0.38.x:
 
 ```bash
 > go list -json ./... | jq '.Imports, .TestImports, .XTestImports' | grep cometbft | sort | uniq | tr -d '", '
-github.com/cometbft/cometbft/abci/types
-github.com/cometbft/cometbft/config
-github.com/cometbft/cometbft/crypto
-github.com/cometbft/cometbft/crypto/secp256k1
-github.com/cometbft/cometbft/crypto/tmhash
-github.com/cometbft/cometbft/libs/bytes
-github.com/cometbft/cometbft/libs/math
-github.com/cometbft/cometbft/light
-github.com/cometbft/cometbft/proto/tendermint/crypto
-github.com/cometbft/cometbft/proto/tendermint/types
-github.com/cometbft/cometbft/proto/tendermint/version
-github.com/cometbft/cometbft/state
-github.com/cometbft/cometbft/types
-github.com/cometbft/cometbft/version
+github.com/depinnetwork/por-consensus/abci/types
+github.com/depinnetwork/por-consensus/config
+github.com/depinnetwork/por-consensus/crypto
+github.com/depinnetwork/por-consensus/crypto/secp256k1
+github.com/depinnetwork/por-consensus/crypto/tmhash
+github.com/depinnetwork/por-consensus/libs/bytes
+github.com/depinnetwork/por-consensus/libs/math
+github.com/depinnetwork/por-consensus/light
+github.com/depinnetwork/por-consensus/proto/tendermint/crypto
+github.com/depinnetwork/por-consensus/proto/tendermint/types
+github.com/depinnetwork/por-consensus/proto/tendermint/version
+github.com/depinnetwork/por-consensus/state
+github.com/depinnetwork/por-consensus/types
+github.com/depinnetwork/por-consensus/version
 ```
 
 #### Packages used by the Cosmos Hub
@@ -204,7 +204,7 @@ remain publicly exported. All other packages in CometBFT should be moved under
   can be moved back out of the `internal` directory in subsequent minor
   releases.
 
-[\#1484]: https://github.com/cometbft/cometbft/issues/1484
+[\#1484]: https://github.com/depinnetwork/por-consensus/issues/1484
 [ADR 060]: tendermint-core/adr-060-go-api-stability.md
 [Cosmos SDK]: https://github.com/cosmos/cosmos-sdk/
 [Cosmos Hub]: https://github.com/cosmos/gaia

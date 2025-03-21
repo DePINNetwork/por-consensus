@@ -594,14 +594,14 @@ Vote extensions pose an issue for CometBFT upgrades.
 Blockchains that perform a coordinated upgrade from ABCI 1.0 to ABCI 2.0 will attempt
 to produce the first height running ABCI 2.0 without vote extension data from the previous height.
 As explained in previous sections, blockchains running ABCI 2.0 *require* vote extension data in each
-[PrepareProposal](https://github.com/cometbft/cometbft/blob/feature/abci++vef/proto/tendermint/abci/types.proto#L134)
+[PrepareProposal](https://github.com/depinnetwork/por-consensus/blob/feature/abci++vef/proto/tendermint/abci/types.proto#L134)
 call.
 
 #### New `ConsensusParam`
 
 To facilitate the upgrade and provide applications a mechanism to require vote extensions,
 we introduce a new
-[`ConsensusParam`](https://github.com/cometbft/cometbft/blob/38a4cae/proto/tendermint/types/params.proto#L13)
+[`ConsensusParam`](https://github.com/depinnetwork/por-consensus/blob/38a4cae/proto/tendermint/types/params.proto#L13)
 to transition the chain from maintaining no history of vote extensions to requiring vote extensions.
 This parameter is an `int64` representing the first height where vote extensions
 will be required for votes to be considered valid.
@@ -735,8 +735,8 @@ required to make progress will always be held somewhere in the network.
 - [Empty vote extensions issue](https://github.com/tendermint/tendermint/issues/8174)
 - [Toggle vote extensions issue][toggle-vote-extensions]
 
-[abci-0-17-0]: https://github.com/cometbft/cometbft/blob/v0.34.x/spec/abci/README.md
-[abci-1-0]: https://github.com/cometbft/cometbft/blob/v0.37.x/spec/abci/README.md
-[abci-2-0]: https://github.com/cometbft/cometbft/blob/main/spec/abci/README.md
-[light-client-spec]: https://github.com/cometbft/cometbft/blob/main/spec/light-client/README.md
+[abci-0-17-0]: https://github.com/depinnetwork/por-consensus/blob/v0.34.x/spec/abci/README.md
+[abci-1-0]: https://github.com/depinnetwork/por-consensus/blob/v0.37.x/spec/abci/README.md
+[abci-2-0]: https://github.com/depinnetwork/por-consensus/blob/main/spec/abci/README.md
+[light-client-spec]: https://github.com/depinnetwork/por-consensus/blob/main/spec/light-client/README.md
 [toggle-vote-extensions]: https://github.com/tendermint/tendermint/issues/8453

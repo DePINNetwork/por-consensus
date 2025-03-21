@@ -22,7 +22,7 @@ make build
 The `load` binary is built when `make build` is invoked. The `load` tool generates
 transactions and broadcasts them to CometBFT.
 
-`load` leverages the [cometbft-load-test](https://github.com/cometbft/cometbft-load-test)
+`load` leverages the [cometbft-load-test](https://github.com/depinnetwork/por-consensus-load-test)
 framework. As a result, all flags and options specified on the `cometbft-load-test` apply to
 `load`.
 

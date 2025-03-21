@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/cometbft/cometbft/light/provider"
-	"github.com/cometbft/cometbft/light/provider/http"
-	"github.com/cometbft/cometbft/light/store"
+	"github.com/depinnetwork/por-consensus/light/provider"
+	"github.com/depinnetwork/por-consensus/light/provider/http"
+	"github.com/depinnetwork/por-consensus/light/store"
 )
 
 // NewHTTPClient initiates an instance of a light client using HTTP addresses

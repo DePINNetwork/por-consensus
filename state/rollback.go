@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	cmtstate "github.com/cometbft/cometbft/api/cometbft/state/v2"
-	cmtversion "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	"github.com/cometbft/cometbft/version"
+	cmtstate "github.com/depinnetwork/por-consensus/api/cometbft/state/v2"
+	cmtversion "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 // Rollback overwrites the current CometBFT state (height n) with the most

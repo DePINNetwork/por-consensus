@@ -16,7 +16,7 @@ potential for mistaken use and separate the time-dependent processing of the
 "get by height" methods, making them idempotent. The use case for "get latest"
 also needs to be scrutinized here.
 
-[ADR 101]: https://github.com/cometbft/cometbft/blob/main/docs/architecture/adr-101-data-companion-pull-api.md
+[ADR 101]: https://github.com/depinnetwork/por-consensus/blob/main/docs/architecture/adr-101-data-companion-pull-api.md
 
 ## Background
 
@@ -25,17 +25,17 @@ data on the latest block:
 `GetLatest` to `BlockService` ([#1209]) and
 `GetLatestBlockResults` to `BlockResultsService` ([#1168])
 
-[#1209]: https://github.com/cometbft/cometbft/pull/1209
-[#1168]: https://github.com/cometbft/cometbft/pull/1168
+[#1209]: https://github.com/depinnetwork/por-consensus/pull/1209
+[#1168]: https://github.com/depinnetwork/por-consensus/pull/1168
 
 The special treatment of the height value of 0 in `GetByHeight` and
 `GetBlockResults` has been seemingly forgotten.
 
 ### References
 
-* [Discussion](https://github.com/cometbft/cometbft/pull/1533#discussion_r1370861999)
+* [Discussion](https://github.com/depinnetwork/por-consensus/pull/1533#discussion_r1370861999)
   on complications arising from the additional methods in
-  proto cleanup work for [#1530](https://github.com/cometbft/cometbft/issues/1530).
+  proto cleanup work for [#1530](https://github.com/depinnetwork/por-consensus/issues/1530).
 
 ## Discussion
 

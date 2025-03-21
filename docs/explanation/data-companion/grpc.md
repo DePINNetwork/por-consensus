@@ -87,7 +87,7 @@ managed in a more idiomatic manner. However, if necessary and desired, the proto
 Here is an example code to retrieve a block by its height:
 ```
 import (
-     "github.com/cometbft/cometbft/rpc/grpc/client"
+     "github.com/depinnetwork/por-consensus/rpc/grpc/client"
 )
 
 ctx := context.Background()
@@ -150,7 +150,7 @@ Once you get a message, you can check the `Height` field for the latest height (
 Here's an example:
 ```
 import (
-"github.com/cometbft/cometbft/rpc/grpc/client"
+"github.com/depinnetwork/por-consensus/rpc/grpc/client"
 )
 
 ctx := context.Background()

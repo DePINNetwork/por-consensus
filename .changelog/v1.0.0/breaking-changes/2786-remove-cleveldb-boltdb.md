@@ -1,1 +1,1 @@
-- `[config]` Remove `cleveldb` and `boltdb` ([\#2786](https://github.com/cometbft/cometbft/pull/2786))
+- `[config]` Remove `cleveldb` and `boltdb` ([\#2786](https://github.com/depinnetwork/por-consensus/pull/2786))

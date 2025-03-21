@@ -1,9 +1,9 @@
 package types
 
 import (
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	cryptoenc "github.com/depinnetwork/por-consensus/crypto/encoding"
 )
 
 // -------------------------------------------------------

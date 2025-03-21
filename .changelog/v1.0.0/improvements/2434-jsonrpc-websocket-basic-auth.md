@@ -1,1 +1,1 @@
-- `[jsonrpc]` enable HTTP basic auth in websocket client ([#2434](https://github.com/cometbft/cometbft/pull/2434))
+- `[jsonrpc]` enable HTTP basic auth in websocket client ([#2434](https://github.com/depinnetwork/por-consensus/pull/2434))

@@ -3,9 +3,9 @@ package p2p
 import (
 	"net"
 
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/p2p/internal/nodekey"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
+	"github.com/depinnetwork/por-consensus/p2p/internal/nodekey"
 )
 
 // IPeerSet has a (immutable) subset of the methods of PeerSet.

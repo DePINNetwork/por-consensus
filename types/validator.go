@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/crypto"
-	ce "github.com/cometbft/cometbft/crypto/encoding"
-	"github.com/cometbft/cometbft/internal/keytypes"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/crypto"
+	ce "github.com/depinnetwork/por-consensus/crypto/encoding"
+	"github.com/depinnetwork/por-consensus/internal/keytypes"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
 )
 
 // ErrUnsupportedPubKeyType is returned when a public key type is not supported.

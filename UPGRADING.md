@@ -12,9 +12,9 @@ Non-replay-protected vote extensions are added to CometBFT to allow applications
 CometBFT was refactored to use a single database, PebbleDB. CometBFT no longer
 imports `cometbft/cometbft-db`. If you want to use a different database, you
 can implement the `DB` interface yourself or simply copy the
-previously-imported wrapper from https://github.com/cometbft/cometbft-db and
+previously-imported wrapper from https://github.com/depinnetwork/por-consensus-db and
 use it when constructing a new node by supplying different
-[`DBProvider`](https://pkg.go.dev/github.com/cometbft/cometbft/config#DBProvider).
+[`DBProvider`](https://pkg.go.dev/github.com/depinnetwork/por-consensus/config#DBProvider).
 
 ## v1.x
 
@@ -130,7 +130,7 @@ coordinated upgrade.
 ### Go API
 
 When upgrading from the v0.34 release series, please note that the Go module has
-now changed to `github.com/cometbft/cometbft`.
+now changed to `github.com/depinnetwork/por-consensus`.
 
 ### ABCI Changes
 
@@ -183,12 +183,12 @@ v0.34.24, or Informal Systems' public fork), you can upgrade to CometBFT
 v0.34.27 by replacing your dependency in your `go.mod` file:
 
 ```bash
-go mod edit -replace github.com/tendermint/tendermint=github.com/cometbft/cometbft@v0.34.27
+go mod edit -replace github.com/tendermint/tendermint=github.com/depinnetwork/por-consensus@v0.34.27
 ```
 
 We make use of the original module URL in order to minimize the impact of
 switching to CometBFT. This is only possible in our v0.34 release series, and we
-will be switching our module URL to `github.com/cometbft/cometbft` in the next
+will be switching our module URL to `github.com/depinnetwork/por-consensus` in the next
 major release.
 
 ### Home directory
@@ -223,7 +223,7 @@ please see the [Tendermint Core upgrading instructions][tmupgrade].
 [v03424]: https://github.com/tendermint/tendermint/releases/tag/v0.34.24
 [v03425]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.25
 [v03426]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.26
-[discussions]: https://github.com/cometbft/cometbft/discussions
+[discussions]: https://github.com/depinnetwork/por-consensus/discussions
 [tmupgrade]: https://github.com/tendermint/tendermint/blob/35581cf54ec436b8c37fabb43fdaa3f48339a170/UPGRADING.md
 [go120]: https://go.dev/blog/go1.20
 [go123]: https://go.dev/blog/go1.23

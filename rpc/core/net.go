@@ -7,12 +7,12 @@ import (
 	"os"
 	"strings"
 
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/p2p"
-	na "github.com/cometbft/cometbft/p2p/netaddr"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	"github.com/cometbft/cometbft/types"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/p2p"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	rpctypes "github.com/depinnetwork/por-consensus/rpc/jsonrpc/types"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // NetInfo returns network info.

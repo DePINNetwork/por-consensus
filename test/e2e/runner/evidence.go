@@ -10,15 +10,15 @@ import (
 	"path/filepath"
 	"time"
 
-	cmtversion "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/internal/test"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/privval"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/types"
-	"github.com/cometbft/cometbft/version"
+	cmtversion "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/privval"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
+	"github.com/depinnetwork/por-consensus/types"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 // 1 in 4 evidence is light client evidence, the rest is duplicate vote evidence.

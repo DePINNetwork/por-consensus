@@ -1,9 +1,9 @@
 - `[proto]` The names in the `cometbft.abci.v1` versioned proto package
   are changed to satisfy the
   [buf guidelines](https://buf.build/docs/best-practices/style-guide/)
-  ([#736](https://github.com/cometbft/cometbft/issues/736),
-   [#1504](https://github.com/cometbft/cometbft/issues/1504),
-   [#1530](https://github.com/cometbft/cometbft/issues/1530)):
+  ([#736](https://github.com/depinnetwork/por-consensus/issues/736),
+   [#1504](https://github.com/depinnetwork/por-consensus/issues/1504),
+   [#1530](https://github.com/depinnetwork/por-consensus/issues/1530)):
   * Names of request and response types used in gRPC changed by making
     `Request`/`Response` the suffix instead of the prefix, e.g.
     `RequestCheckTx` ⭢ `CheckTxRequest`.

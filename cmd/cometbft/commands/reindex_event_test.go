@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abcitypes "github.com/cometbft/cometbft/abci/types"
-	cmtcfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/internal/test"
-	blockmocks "github.com/cometbft/cometbft/state/indexer/mocks"
-	"github.com/cometbft/cometbft/state/mocks"
-	txmocks "github.com/cometbft/cometbft/state/txindex/mocks"
-	"github.com/cometbft/cometbft/types"
+	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	blockmocks "github.com/depinnetwork/por-consensus/state/indexer/mocks"
+	"github.com/depinnetwork/por-consensus/state/mocks"
+	txmocks "github.com/depinnetwork/por-consensus/state/txindex/mocks"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

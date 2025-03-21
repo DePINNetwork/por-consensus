@@ -3,10 +3,10 @@ package txindex
 import (
 	"context"
 
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/types"
+	cmtpubsub "github.com/depinnetwork/por-consensus/libs/pubsub"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	"github.com/depinnetwork/por-consensus/state/indexer"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // XXX/TODO: These types should be moved to the indexer package.

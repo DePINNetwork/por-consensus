@@ -9,12 +9,12 @@ import (
 
 	gogo "github.com/cosmos/gogoproto/types"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/crypto/bls12381"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/secp256k1"
-	"github.com/cometbft/cometbft/crypto/secp256k1eth"
-	"github.com/cometbft/cometbft/crypto/tmhash"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1eth"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
 )
 
 const (

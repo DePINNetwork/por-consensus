@@ -7,17 +7,17 @@ import (
 
 	"google.golang.org/grpc"
 
-	pbblocksvc "github.com/cometbft/cometbft/api/cometbft/services/block/v2"
-	brs "github.com/cometbft/cometbft/api/cometbft/services/block_results/v2"
-	pbversionsvc "github.com/cometbft/cometbft/api/cometbft/services/version/v1"
-	"github.com/cometbft/cometbft/libs/log"
-	grpcerr "github.com/cometbft/cometbft/rpc/grpc/errors"
-	"github.com/cometbft/cometbft/rpc/grpc/server/services/blockresultservice"
-	"github.com/cometbft/cometbft/rpc/grpc/server/services/blockservice"
-	"github.com/cometbft/cometbft/rpc/grpc/server/services/versionservice"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
+	pbblocksvc "github.com/depinnetwork/por-consensus/api/cometbft/services/block/v2"
+	brs "github.com/depinnetwork/por-consensus/api/cometbft/services/block_results/v2"
+	pbversionsvc "github.com/depinnetwork/por-consensus/api/cometbft/services/version/v1"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	grpcerr "github.com/depinnetwork/por-consensus/rpc/grpc/errors"
+	"github.com/depinnetwork/por-consensus/rpc/grpc/server/services/blockresultservice"
+	"github.com/depinnetwork/por-consensus/rpc/grpc/server/services/blockservice"
+	"github.com/depinnetwork/por-consensus/rpc/grpc/server/services/versionservice"
+	sm "github.com/depinnetwork/por-consensus/state"
+	"github.com/depinnetwork/por-consensus/store"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 // Option is any function that allows for configuration of the gRPC server

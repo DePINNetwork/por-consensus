@@ -16,17 +16,17 @@ import (
 
 	_ "embed"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/bls12381"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/secp256k1"
-	"github.com/cometbft/cometbft/crypto/secp256k1eth"
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	grpcclient "github.com/cometbft/cometbft/rpc/grpc/client"
-	grpcprivileged "github.com/cometbft/cometbft/rpc/grpc/client/privileged"
-	"github.com/cometbft/cometbft/test/e2e/app"
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1eth"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	grpcclient "github.com/depinnetwork/por-consensus/rpc/grpc/client"
+	grpcprivileged "github.com/depinnetwork/por-consensus/rpc/grpc/client/privileged"
+	"github.com/depinnetwork/por-consensus/test/e2e/app"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const (

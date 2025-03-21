@@ -373,7 +373,7 @@ initial_block_results_retain_height = 0
 
 #
 # This is the envisaged configuration section for the gRPC API that will be
-# introduced as part of https://github.com/cometbft/cometbft/issues/81
+# introduced as part of https://github.com/depinnetwork/por-consensus/issues/81
 # (Still a WIP)
 #
 [grpc]
@@ -467,6 +467,6 @@ companion, but only if the data companion is the exclusive user of those APIs.
 [adr-100]: adr-100-data-companion-push-api.md
 [adr-100-req]: adr-100-data-companion-push-api.md#requirements
 [adr-100-alt]: adr-100-data-companion-push-api.md#alternative-approaches
-[\#81]: https://github.com/cometbft/cometbft/issues/81
+[\#81]: https://github.com/depinnetwork/por-consensus/issues/81
 [abci-commit]: ../../../spec/abci/abci++_methods.md#commit
-[dc-docs]: https://github.com/cometbft/cometbft/tree/main/docs/data-companion
+[dc-docs]: https://github.com/depinnetwork/por-consensus/tree/main/docs/data-companion

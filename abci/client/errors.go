@@ -3,7 +3,7 @@ package abcicli
 import (
 	"fmt"
 
-	"github.com/cometbft/cometbft/abci/types"
+	"github.com/depinnetwork/por-consensus/abci/types"
 )
 
 // ErrUnknownAbciTransport is returned when trying to create a client with an invalid transport option.

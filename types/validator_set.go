@@ -10,10 +10,10 @@ import (
 	"sort"
 	"strings"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v2"
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
+	"github.com/depinnetwork/por-consensus/crypto/merkle"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	cmtmath "github.com/depinnetwork/por-consensus/libs/math"
 )
 
 const (

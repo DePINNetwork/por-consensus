@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	cmterrors "github.com/cometbft/cometbft/types/errors"
-	"github.com/cometbft/cometbft/version"
+	cmterrors "github.com/depinnetwork/por-consensus/types/errors"
+	"github.com/depinnetwork/por-consensus/version"
 )
 
 const (

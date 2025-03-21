@@ -76,13 +76,13 @@ Sometimes it's necessary to rename libraries to avoid naming collisions or ambig
 * Use [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports)
 * Separate imports into blocks - one for the standard lib, one for external libs and one for application libs.
 * Here are some common library labels for consistency:
-    * dbm "github.com/cometbft/cometbft-db"
-    * cmtcmd "github.com/cometbft/cometbft/cmd/cometbft/commands"
-    * cmtcfg "github.com/cometbft/cometbft/config"
-    * cmttypes "github.com/cometbft/cometbft/types"
+    * dbm "github.com/depinnetwork/por-consensus-db"
+    * cmtcmd "github.com/depinnetwork/por-consensus/cmd/cometbft/commands"
+    * cmtcfg "github.com/depinnetwork/por-consensus/config"
+    * cmttypes "github.com/depinnetwork/por-consensus/types"
 * Never use anonymous imports (the `.`), for example, `cmtlibs/common` or anything else.
 * When importing a pkg from the `cmt/libs` directory, prefix the pkg alias with cmt.
-    * cmtbits "github.com/cometbft/cometbft/libs/bits"
+    * cmtbits "github.com/depinnetwork/por-consensus/libs/bits"
 * tip: Use the `_` library import to import a library for initialization effects (side effects)
 
 ## Dependencies

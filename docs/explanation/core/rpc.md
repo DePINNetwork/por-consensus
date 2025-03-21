@@ -10,6 +10,6 @@ The RPC documentation is hosted here:
 
 <!--
 NOTE: The OpenAPI reference (../rpc) is injected into the documentation during
-the CometBFT docs build process. See https://github.com/cometbft/cometbft-docs/
+the CometBFT docs build process. See https://github.com/depinnetwork/por-consensus-docs/
 for details.
 -->

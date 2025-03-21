@@ -1,2 +1,2 @@
 - `[e2e]` Allow latency emulation between nodes.
-  ([\#1559](https://github.com/cometbft/cometbft/pull/1559))
+  ([\#1559](https://github.com/depinnetwork/por-consensus/pull/1559))

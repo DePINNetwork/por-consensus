@@ -15,7 +15,7 @@ In order to demonstrate that CometBFT behaves as expected from the viewpoint of 
 - Check if the set of observed requests respects the ABCI 2.0 grammar.
 
 
-Issue: [353](https://github.com/cometbft/cometbft/issues/353).
+Issue: [353](https://github.com/depinnetwork/por-consensus/issues/353).
 
 
 
@@ -29,7 +29,7 @@ receives a request, it logs it.
 
 The rationale behind this part of the implementation was to log the request concisely and use the existing structures as much as possible.
 
-Whenever an ABCI 2.0 request is made, the application will create `abci.Request` (`abci` stands for `"github.com/cometbft/cometbft/abci/types"`) and log it.  The example is below.
+Whenever an ABCI 2.0 request is made, the application will create `abci.Request` (`abci` stands for `"github.com/depinnetwork/por-consensus/abci/types"`) and log it.  The example is below.
 
 ```go
 func (app *Application) InitChain(_ context.Context, req *abci.InitChainRequest) (*abci.InitChainResponse, error) {

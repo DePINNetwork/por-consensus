@@ -9,7 +9,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/log"
 )
 
 func TestTracingLogger(t *testing.T) {

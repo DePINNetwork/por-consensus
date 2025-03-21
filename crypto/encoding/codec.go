@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"reflect"
 
-	pc "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/bls12381"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/secp256k1"
-	"github.com/cometbft/cometbft/crypto/secp256k1eth"
-	"github.com/cometbft/cometbft/libs/json"
+	pc "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1"
+	"github.com/depinnetwork/por-consensus/crypto/secp256k1eth"
+	"github.com/depinnetwork/por-consensus/libs/json"
 )
 
 // ErrUnsupportedKey describes an error resulting from the use of an

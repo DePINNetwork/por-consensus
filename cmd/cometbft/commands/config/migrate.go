@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/exp/maps"
 
-	"github.com/cometbft/cometbft/internal/confix"
+	"github.com/depinnetwork/por-consensus/internal/confix"
 )
 
 var (

@@ -3,4 +3,4 @@
   not yet have any data. The light client will now, correctly, not panic
   _and_ keep the node in its list of providers in the same way it would if
   it queried a node starting from height zero that does not yet have data
-  ([\#575](https://github.com/cometbft/cometbft/issues/575))
+  ([\#575](https://github.com/depinnetwork/por-consensus/issues/575))

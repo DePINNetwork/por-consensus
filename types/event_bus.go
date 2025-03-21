@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/libs/service"
+	"github.com/depinnetwork/por-consensus/abci/types"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtpubsub "github.com/depinnetwork/por-consensus/libs/pubsub"
+	"github.com/depinnetwork/por-consensus/libs/service"
 )
 
 const defaultCapacity = 0

@@ -10,12 +10,12 @@ import (
 
 	"github.com/google/uuid"
 
-	cmtrand "github.com/cometbft/cometbft/internal/rand"
-	"github.com/cometbft/cometbft/libs/log"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/test/loadtime/payload"
-	"github.com/cometbft/cometbft/types"
+	cmtrand "github.com/depinnetwork/por-consensus/internal/rand"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	e2e "github.com/depinnetwork/por-consensus/test/e2e/pkg"
+	"github.com/depinnetwork/por-consensus/test/loadtime/payload"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const workerPoolSize = 16

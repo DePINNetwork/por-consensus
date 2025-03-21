@@ -124,7 +124,7 @@ keeping the mempool reactor operational and the `broadcast_tx_*` endpoints open.
 Instead, we believe that nodes should reject incoming transactions until they
 switch to consensus mode. This approach will provide clearer semantics for the
 RPC endpoints, thus improving the user experience. Please refer to issue
-[#785](https://github.com/cometbft/cometbft/issues/785), which will address this
+[#785](https://github.com/depinnetwork/por-consensus/issues/785), which will address this
 decision.
 
 ### Outbound messages
@@ -212,7 +212,7 @@ lower.
 [receive]: https://github.com/CometBFT/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/reactor.go#L93
 [broadcast]: https://github.com/CometBFT/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/reactor.go#L132
 [optimization]: https://github.com/CometBFT/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/reactor.go#L171-L174
-[check-tx]: https://github.com/cometbft/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L202
-[update]: https://github.com/cometbft/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L577
-[reap]: https://github.com/cometbft/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L519
-[rpc]: https://github.com/cometbft/cometbft/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/rpc/core/mempool.go#L22-L144
+[check-tx]: https://github.com/depinnetwork/por-consensus/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L202
+[update]: https://github.com/depinnetwork/por-consensus/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L577
+[reap]: https://github.com/depinnetwork/por-consensus/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/mempool/clist_mempool.go#L519
+[rpc]: https://github.com/depinnetwork/por-consensus/blob/23c37d65990aa8ef2cc5a442792f56eb87d4d1e9/rpc/core/mempool.go#L22-L144

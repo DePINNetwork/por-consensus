@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	privvalproto "github.com/cometbft/cometbft/api/cometbft/privval/v2"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
+	privvalproto "github.com/depinnetwork/por-consensus/api/cometbft/privval/v2"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	"github.com/depinnetwork/por-consensus/libs/service"
+	cmtsync "github.com/depinnetwork/por-consensus/libs/sync"
 )
 
 // SignerListenerEndpointOption sets an optional parameter on the SignerListenerEndpoint.

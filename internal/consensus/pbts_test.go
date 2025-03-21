@@ -10,14 +10,14 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abci "github.com/cometbft/cometbft/abci/types"
-	abcimocks "github.com/cometbft/cometbft/abci/types/mocks"
-	"github.com/cometbft/cometbft/internal/test"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	cmttimemocks "github.com/cometbft/cometbft/types/time/mocks"
+	"github.com/depinnetwork/por-consensus/abci/example/kvstore"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	abcimocks "github.com/depinnetwork/por-consensus/abci/types/mocks"
+	"github.com/depinnetwork/por-consensus/internal/test"
+	cmtpubsub "github.com/depinnetwork/por-consensus/libs/pubsub"
+	"github.com/depinnetwork/por-consensus/types"
+	cmttime "github.com/depinnetwork/por-consensus/types/time"
+	cmttimemocks "github.com/depinnetwork/por-consensus/types/time/mocks"
 )
 
 const (

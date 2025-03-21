@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cmtcrypto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
-	"github.com/cometbft/cometbft/crypto/merkle"
+	cmtcrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
+	"github.com/depinnetwork/por-consensus/crypto/merkle"
 )
 
 type MockProofOperator struct {

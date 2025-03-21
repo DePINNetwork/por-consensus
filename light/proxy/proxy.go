@@ -5,12 +5,12 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/light"
-	lrpc "github.com/cometbft/cometbft/light/rpc"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	rpcserver "github.com/cometbft/cometbft/rpc/jsonrpc/server"
+	"github.com/depinnetwork/por-consensus/libs/log"
+	cmtpubsub "github.com/depinnetwork/por-consensus/libs/pubsub"
+	"github.com/depinnetwork/por-consensus/light"
+	lrpc "github.com/depinnetwork/por-consensus/light/rpc"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	rpcserver "github.com/depinnetwork/por-consensus/rpc/jsonrpc/server"
 )
 
 // A Proxy defines parameters for running an HTTP server proxy.

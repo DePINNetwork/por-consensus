@@ -15,7 +15,7 @@ The changes with respect to the baseline, `v0.37.0-alpha.3` from Feb 21, 2023,
 include the introduction of the `FinalizeBlock` method to complete the full
 range of ABCI++ functionality (ABCI 2.0), and other several improvements
 described in the
-[CHANGELOG](https://github.com/cometbft/cometbft/blob/v0.38.0-alpha.2/CHANGELOG.md).
+[CHANGELOG](https://github.com/depinnetwork/por-consensus/blob/v0.38.0-alpha.2/CHANGELOG.md).
 
 ## Table of Contents
 - [CometBFT QA Results v0.38.x](#cometbft-qa-results-v038x)
@@ -586,7 +586,7 @@ Observe that in all runs, the average number of transactions in the mempool quic
 
 [\#9539]: https://github.com/tendermint/tendermint/issues/9539
 [\#9548]: https://github.com/tendermint/tendermint/issues/9548
-[\#539]: https://github.com/cometbft/cometbft/issues/539
-[\#546]: https://github.com/cometbft/cometbft/issues/546
-[\#562]: https://github.com/cometbft/cometbft/issues/562
-[end-to-end]: https://github.com/cometbft/cometbft/tree/main/test/e2e
+[\#539]: https://github.com/depinnetwork/por-consensus/issues/539
+[\#546]: https://github.com/depinnetwork/por-consensus/issues/546
+[\#562]: https://github.com/depinnetwork/por-consensus/issues/562
+[end-to-end]: https://github.com/depinnetwork/por-consensus/tree/main/test/e2e

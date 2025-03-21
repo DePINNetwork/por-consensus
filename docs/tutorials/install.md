@@ -9,18 +9,18 @@ order: 1
 Install the latest version of CometBFT's Go package:
 
 ```sh
-go install github.com/cometbft/cometbft/cmd/cometbft@latest
+go install github.com/depinnetwork/por-consensus/cmd/cometbft@latest
 ```
 
 Install a specific version of CometBFT's Go package:
 
 ```sh
-go install github.com/cometbft/cometbft/cmd/cometbft@v0.38
+go install github.com/depinnetwork/por-consensus/cmd/cometbft@v0.38
 ```
 
 ## From Binary
 
-To download pre-built binaries, see the [releases page](https://github.com/cometbft/cometbft/releases).
+To download pre-built binaries, see the [releases page](https://github.com/depinnetwork/por-consensus/releases).
 
 ## From Source
 
@@ -35,7 +35,7 @@ echo export PATH=\"\$PATH:\$GOPATH/bin\" >> ~/.bash_profile
 ### Get Source Code
 
 ```sh
-git clone https://github.com/cometbft/cometbft.git
+git clone https://github.com/depinnetwork/por-consensus.git
 cd cometbft
 ```
 

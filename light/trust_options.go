@@ -3,7 +3,7 @@ package light
 import (
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
 )
 
 // TrustOptions are the trust parameters needed when a new light client

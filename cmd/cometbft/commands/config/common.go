@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cometbft/cometbft/cmd/cometbft/commands"
-	cfg "github.com/cometbft/cometbft/config"
+	"github.com/depinnetwork/por-consensus/cmd/cometbft/commands"
+	cfg "github.com/depinnetwork/por-consensus/config"
 )
 
 func defaultConfigPath(cmd *cobra.Command) string {

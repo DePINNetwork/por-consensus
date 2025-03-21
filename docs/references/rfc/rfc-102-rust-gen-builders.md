@@ -33,13 +33,13 @@ limitations of a particular language binding.
 
 * Issue [#399](https://github.com/tokio-rs/prost/issues/399) in the prost
   repository captures the general problem and discussion.
-* CometBFT PR [#495](https://github.com/cometbft/cometbft/pull/495) introduces
+* CometBFT PR [#495](https://github.com/depinnetwork/por-consensus/pull/495) introduces
   versioned protobuf definitions, currently with extra versioning applied
   to accommodate API breakage caused in tendermint-rs by code generated with
   prost-build.
 * [Notes](https://docs.google.com/document/d/1DoxKiYtUx44xZv5my-bkfWZKY6TklvxpSUrdX9yOpNw/edit?usp=sharing) on the discussion during a 13 Apr 2023 meeting, detailing the
   considerations specific to CometBFT versioning.
-* [ADR 103](https://github.com/cometbft/cometbft/blob/main/docs/references/architecture/adr-103-proto-versioning.md) details the versioning approach as currently
+* [ADR 103](https://github.com/depinnetwork/por-consensus/blob/main/docs/references/architecture/adr-103-proto-versioning.md) details the versioning approach as currently
   accepted.
 
 ## Discussion

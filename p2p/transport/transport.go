@@ -3,7 +3,7 @@ package transport
 import (
 	"github.com/cosmos/gogoproto/proto"
 
-	na "github.com/cometbft/cometbft/p2p/netaddr"
+	na "github.com/depinnetwork/por-consensus/p2p/netaddr"
 )
 
 // Transport connects the local node to the rest of the network.

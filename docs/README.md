@@ -20,7 +20,7 @@ For more background, see [What is CometBFT?](./explanation/introduction/README.m
 
 To get started quickly with an example application, see the [quick start guide](tutorials/quick-start.md).
 
-To learn about application development on CometBFT, see the [Application Blockchain Interface](https://github.com/cometbft/cometbft/tree/main/spec/abci).
+To learn about application development on CometBFT, see the [Application Blockchain Interface](https://github.com/depinnetwork/por-consensus/tree/main/spec/abci).
 
 For more details on using CometBFT, see the respective documentation for
 [CometBFT internals](explanation/core/), [benchmarking and monitoring](guides/tools/).
@@ -40,4 +40,4 @@ Changes to the documentation will be reviewed by the team and, if accepted and
 merged, published to <https://docs.cometbft.com> for the respective version(s).
 
 The build process for the documentation is housed in the [CometBFT documentation
-repository](https://github.com/cometbft/cometbft-docs).
+repository](https://github.com/depinnetwork/por-consensus-docs).

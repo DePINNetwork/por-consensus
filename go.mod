@@ -1,4 +1,4 @@
-module github.com/cometbft/cometbft
+module github.com/depinnetwork/por-consensus
 
 go 1.23
 replace github.com/cometbft/cometbft/api => ./api

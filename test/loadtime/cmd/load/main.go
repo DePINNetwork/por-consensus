@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/cometbft/cometbft-load-test/pkg/loadtest"
-	"github.com/cometbft/cometbft/test/loadtime/payload"
+	"github.com/depinnetwork/por-consensus-load-test/pkg/loadtest"
+	"github.com/depinnetwork/por-consensus/test/loadtime/payload"
 )
 
 // Ensure all of the interfaces are correctly satisfied.
