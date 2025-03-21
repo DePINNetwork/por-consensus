@@ -2,6 +2,6 @@ module github.com/depinnetwork/por-consensus/api/cometbft/abci
 
 go 1.20
 
-require github.com/depinnetwork/por-consensus v0.0.0-20250321102932-58a55429ae6a-20250321102931-58a55429ae6a
+require github.com/depinnetwork/por-consensus v0.0.0-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
 
 replace github.com/depinnetwork/por-consensus => ../../
