@@ -2,6 +2,6 @@ module github.com/depinnetwork/por-consensus/api/cometbft/store
 
 go 1.20
 
-require github.com/depinnetwork/por-consensus v0.0.0-20250321113429-d202622238c6-20250321113429-d202622238c6
+require github.com/depinnetwork/por-consensus v0.0.0-20250321114040-ad1fc897e07e-20250321114040-ad1fc897e07e
 
 replace github.com/depinnetwork/por-consensus => ../../
