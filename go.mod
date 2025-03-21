@@ -1,7 +1,8 @@
 module github.com/depinnetwork/por-consensus
 
-go 1.23
-replace github.com/cometbft/cometbft/api => ./api
+go 1.23.1
+
+toolchain go1.23.7
 
 require (
 	github.com/BurntSushi/toml v1.4.0
@@ -9,8 +10,6 @@ require (
 	github.com/adlio/schema v1.3.6
 	github.com/btcsuite/btcd/btcutil v1.1.6
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
-	github.com/cometbft/cometbft-load-test v0.3.0
-	github.com/cometbft/cometbft/api v1.0.0
 	github.com/cosmos/gogoproto v1.7.0
 	github.com/creachadair/atomicfile v0.3.7
 	github.com/creachadair/tomledit v0.0.27
@@ -54,6 +53,24 @@ require (
 
 require (
 	github.com/cockroachdb/pebble v1.1.4
+	github.com/depinnetwork/por-consensus-load-test v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/abci v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/blocksync v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/consensus v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/crypto v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/libs/bits v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/mempool v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/p2p v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/privval v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/services/block v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/services/block_results v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/services/pruning v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/services/version v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/state v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/statesync v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/store v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/types v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/por-consensus/api/cometbft/version v0.0.0-00010101000000-000000000000
 	github.com/go-git/go-git/v5 v5.14.0
 	google.golang.org/protobuf v1.36.5
 )
@@ -148,3 +165,40 @@ retract (
 	// superseded by v0.38.3 because of ASA-2024-001
 	[v0.38.0, v0.38.2]
 )
+
+// API module replace directives
+replace github.com/depinnetwork/por-consensus/api/cometbft/abci => ./api/cometbft/abci
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/blocksync => ./api/cometbft/blocksync
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/consensus => ./api/cometbft/consensus
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/crypto => ./api/cometbft/crypto
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/libs/bits => ./api/cometbft/libs/bits
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/mempool => ./api/cometbft/mempool
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/p2p => ./api/cometbft/p2p
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/privval => ./api/cometbft/privval
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/services/block => ./api/cometbft/services/block
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/services/block_results => ./api/cometbft/services/block_results
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/services/pruning => ./api/cometbft/services/pruning
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/services/version => ./api/cometbft/services/version
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/state => ./api/cometbft/state
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/statesync => ./api/cometbft/statesync
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/store => ./api/cometbft/store
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/types => ./api/cometbft/types
+
+replace github.com/depinnetwork/por-consensus/api/cometbft/version => ./api/cometbft/version
+
+replace github.com/depinnetwork/por-consensus-load-test => ../por-consensus-load-test
