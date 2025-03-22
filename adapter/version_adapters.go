@@ -147,10 +147,6 @@ func ConvertV1ValidatorUpdatesToAbciTypes(v1Updates []abciv1.ValidatorUpdate) []
 	abciUpdates := make([]abcitypes.ValidatorUpdate, len(v1Updates))
 	for i, update := range v1Updates {
 		abciUpdates[i] = abcitypes.ValidatorUpdate{
-			PubKey: abcitypes.PubKey{
-				Type: update.PubKey.Type,
-				Data: update.PubKey.Data,
-			},
 			Power: update.Power,
 		}
 	}
@@ -167,10 +163,6 @@ func ConvertAbciTypesToV1ValidatorUpdates(abciUpdates []abcitypes.ValidatorUpdat
 	v1Updates := make([]abciv1.ValidatorUpdate, len(abciUpdates))
 	for i, update := range abciUpdates {
 		v1Updates[i] = abciv1.ValidatorUpdate{
-			PubKey: abciv1.PublicKey{
-				Type: update.PubKey.Type,
-				Data: update.PubKey.Data,
-			},
 			Power: update.Power,
 		}
 	}
@@ -179,9 +171,9 @@ func ConvertAbciTypesToV1ValidatorUpdates(abciUpdates []abcitypes.ValidatorUpdat
 }
 
 // ConvertV1CommitSigToV2CommitSig converts typesv1.CommitSig to typesv2.CommitSig
-func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig {
+func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig {
 	return typesv2.CommitSig{
-		BlockIdFlag:      typesv2.BlockIDFlag(v1Sig.BlockIdFlag),
+		BlockIDFlag:      typesv2.BlockIDFlag(v1Sig.BlockIDFlag),
 		ValidatorAddress: v1Sig.ValidatorAddress,
 		Timestamp:        v1Sig.Timestamp,
 		Signature:        v1Sig.Signature,
@@ -191,7 +183,7 @@ func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig 
 // ConvertV2CommitSigToV1CommitSig converts typesv2.CommitSig to typesv1.CommitSig
 func ConvertV2CommitSigToV1CommitSig(v2Sig typesv2.CommitSig) typesv1.CommitSig {
 	return typesv1.CommitSig{
-		BlockIdFlag:      typesv1.BlockIDFlag(v2Sig.BlockIdFlag),
+		BlockIDFlag:      typesv1.BlockIDFlag(v2Sig.BlockIDFlag),
 		ValidatorAddress: v2Sig.ValidatorAddress,
 		Timestamp:        v2Sig.Timestamp,
 		Signature:        v2Sig.Signature,
