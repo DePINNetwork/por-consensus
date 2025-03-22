@@ -79,14 +79,8 @@ func ConvertV2AttributesToV1Attributes(v2Attrs []abciv2.EventAttribute) []abciv1
 }
 
 // ConvertV1HeaderToV2Header converts typesv1.Header to typesv2.Header
-// This version handles the Version field structure correctly
 func ConvertV1HeaderToV2Header(v1Header typesv1.Header) typesv2.Header {
 	return typesv2.Header{
-		// Use the correct Version struct type based on actual implementation
-		Version: typesv2.Version{
-			Block: v1Header.Version.Block,
-			App:   v1Header.Version.App,
-		},
 		ChainID:            v1Header.ChainID,
 		Height:             v1Header.Height,
 		Time:               v1Header.Time,
@@ -104,14 +98,8 @@ func ConvertV1HeaderToV2Header(v1Header typesv1.Header) typesv2.Header {
 }
 
 // ConvertV2HeaderToV1Header converts typesv2.Header to typesv1.Header
-// This version handles the Version field structure correctly
 func ConvertV2HeaderToV1Header(v2Header typesv2.Header) typesv1.Header {
 	return typesv1.Header{
-		// Use the correct Version struct type based on actual implementation
-		Version: typesv1.Version{
-			Block: v2Header.Version.Block,
-			App:   v2Header.Version.App,
-		},
 		ChainID:            v2Header.ChainID,
 		Height:             v2Header.Height,
 		Time:               v2Header.Time,
@@ -151,7 +139,6 @@ func ConvertV2BlockIDToV1BlockID(blockID typesv2.BlockID) typesv1.BlockID {
 }
 
 // ConvertV1ValidatorUpdatesToAbciTypes converts []abciv1.ValidatorUpdate to []abcitypes.ValidatorUpdate
-// Adapted to match actual field structures
 func ConvertV1ValidatorUpdatesToAbciTypes(v1Updates []abciv1.ValidatorUpdate) []abcitypes.ValidatorUpdate {
 	if v1Updates == nil {
 		return nil
@@ -159,10 +146,11 @@ func ConvertV1ValidatorUpdatesToAbciTypes(v1Updates []abciv1.ValidatorUpdate) []
 	
 	abciUpdates := make([]abcitypes.ValidatorUpdate, len(v1Updates))
 	for i, update := range v1Updates {
-		// This is a simplified version - inspect the actual structures
-		// and adapt this function to match the real field names
 		abciUpdates[i] = abcitypes.ValidatorUpdate{
-			// Adapt this based on inspection of the actual field structure
+			PubKey: abcitypes.PubKey{
+				Type: update.PubKey.Type,
+				Data: update.PubKey.Data,
+			},
 			Power: update.Power,
 		}
 	}
@@ -171,7 +159,6 @@ func ConvertV1ValidatorUpdatesToAbciTypes(v1Updates []abciv1.ValidatorUpdate) []
 }
 
 // ConvertAbciTypesToV1ValidatorUpdates converts []abcitypes.ValidatorUpdate to []abciv1.ValidatorUpdate
-// Adapted to match actual field structures
 func ConvertAbciTypesToV1ValidatorUpdates(abciUpdates []abcitypes.ValidatorUpdate) []abciv1.ValidatorUpdate {
 	if abciUpdates == nil {
 		return nil
@@ -179,13 +166,34 @@ func ConvertAbciTypesToV1ValidatorUpdates(abciUpdates []abcitypes.ValidatorUpdat
 	
 	v1Updates := make([]abciv1.ValidatorUpdate, len(abciUpdates))
 	for i, update := range abciUpdates {
-		// This is a simplified version - inspect the actual structures
-		// and adapt this function to match the real field names
 		v1Updates[i] = abciv1.ValidatorUpdate{
-			// Adapt this based on inspection of the actual field structure
+			PubKey: abciv1.PublicKey{
+				Type: update.PubKey.Type,
+				Data: update.PubKey.Data,
+			},
 			Power: update.Power,
 		}
 	}
 	
 	return v1Updates
+}
+
+// ConvertV1CommitSigToV2CommitSig converts typesv1.CommitSig to typesv2.CommitSig
+func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig {
+	return typesv2.CommitSig{
+		BlockIdFlag:      typesv2.BlockIDFlag(v1Sig.BlockIdFlag),
+		ValidatorAddress: v1Sig.ValidatorAddress,
+		Timestamp:        v1Sig.Timestamp,
+		Signature:        v1Sig.Signature,
+	}
+}
+
+// ConvertV2CommitSigToV1CommitSig converts typesv2.CommitSig to typesv1.CommitSig
+func ConvertV2CommitSigToV1CommitSig(v2Sig typesv2.CommitSig) typesv1.CommitSig {
+	return typesv1.CommitSig{
+		BlockIdFlag:      typesv1.BlockIDFlag(v2Sig.BlockIdFlag),
+		ValidatorAddress: v2Sig.ValidatorAddress,
+		Timestamp:        v2Sig.Timestamp,
+		Signature:        v2Sig.Signature,
+	}
 }
