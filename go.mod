@@ -179,6 +179,8 @@ retract (
 // API module replace directives
 
 // API module replace directives
+
+// API module replace directives
 replace github.com/depinnetwork/por-consensus/api/cometbft/abci => ./api/cometbft/abci
 
 replace github.com/depinnetwork/por-consensus/api/cometbft/blocksync => ./api/cometbft/blocksync
