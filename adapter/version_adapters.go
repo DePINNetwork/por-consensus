@@ -171,7 +171,7 @@ func ConvertAbciTypesToV1ValidatorUpdates(abciUpdates []abcitypes.ValidatorUpdat
 }
 
 // ConvertV1CommitSigToV2CommitSig converts typesv1.CommitSig to typesv2.CommitSig
-func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig {
+func ConvertV1CommitSigToV2CommitSig(v1Sig typesv1.CommitSig) typesv2.CommitSig {
 	return typesv2.CommitSig{
 		BlockIDFlag:      typesv2.BlockIDFlag(v1Sig.BlockIDFlag),
 		ValidatorAddress: v1Sig.ValidatorAddress,
